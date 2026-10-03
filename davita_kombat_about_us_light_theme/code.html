@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"surface":"#f8f9ff","on-tertiary-fixed-variant":"#93000b","surface-container-low":"#eff4ff","background":"#f8f9ff","on-background":"#0b1c30","primary-fixed-dim":"#b1c7f0","surface-variant":"#d3e4fe","on-primary":"#ffffff","on-surface":"#0b1c30","on-tertiary":"#ffffff","on-error-container":"#93000a","on-tertiary-container":"#ff4840","on-primary-container":"#778db2","on-secondary-fixed":"#001551","outline":"#74777f","tertiary":"#2b0001","tertiary-container":"#530003","primary-container":"#0b2545","on-tertiary-fixed":"#410002","surface-container-high":"#dce9ff","on-error":"#ffffff","inverse-primary":"#b1c7f0","surface-bright":"#f8f9ff","on-secondary-fixed-variant":"#0039b5","on-secondary":"#ffffff","surface-container-lowest":"#ffffff","tertiary-fixed-dim":"#ffb4ab","inverse-on-surface":"#eaf1ff","surface-container-highest":"#d3e4fe","surface-dim":"#cbdbf5","surface-tint":"#495f82","primary":"#001026","surface-container":"#e5eeff","secondary-fixed-dim":"#b7c4ff","error":"#ba1a1a","secondary-container":"#4069f2","inverse-surface":"#213145","on-primary-fixed":"#001c3b","outline-variant":"#c4c6cf","primary-fixed":"#d5e3ff","on-primary-fixed-variant":"#314769","error-container":"#ffdad6","secondary-fixed":"#dce1ff","tertiary-fixed":"#ffdad6","secondary":"#1d4ed8","on-secondary-container":"#fffbff","on-surface-variant":"#44474e"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xl":"2.5rem","space-md":"1rem","space-lg":"1.5rem","space-xs":"0.25rem","space-sm":"0.5rem","margin":"3rem","gutter-mobile":"1rem","margin-mobile":"1.25rem","gutter":"1.5rem"},"fontFamily":{"display-lg":["Montserrat"],"display-lg-mobile":["Montserrat"],"label-tactical":["Montserrat"],"headline-sm":["Montserrat"],"body-lg":["Inter"],"headline-lg":["Montserrat"],"headline-md":["Montserrat"],"label-md":["Inter"],"headline-xl-mobile":["Montserrat"],"label-lg":["Inter"],"body-md":["Inter"],"headline-xl":["Montserrat"],"body-sm":["Inter"]},"fontSize":{"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"800"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"800"}],"label-tactical":["11px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 shadow-[0_1px_8px_rgba(11,37,69,0.06)]"><div class="bg-surface-container-low text-on-surface-variant text-label-md font-label-md border-b border-surface-container-high/60"><div class="max-w-7xl mx-auto px-6 lg:px-12 h-10 flex items-center justify-between"><div class="flex items-center gap-6"><div class="flex items-center gap-1.5 text-on-surface"><span class="material-symbols-outlined text-[16px] text-error">emergency</span><span class="font-semibold">DISPATCH:</span><span class="text-error font-bold tracking-wide">+234 1 800-KOMBAT</span><span class="text-outline-variant">|</span><span>0700-DAVITA-OPS</span></div><div class="hidden lg:flex items-center gap-1.5 text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary">hub</span><span>24/7 Command: Victoria Island Lagos &amp; CBD Abuja</span></div></div><div class="flex items-center gap-4"><span class="hidden md:inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-tactical text-label-tactical uppercase tracking-wider">NSCDC CLASS-A LICENSED</span><a class="inline-flex items-center gap-1 text-primary hover:text-secondary font-semibold transition-colors" data-path="client-portal" href="#"><span class="material-symbols-outlined text-[16px]">lock</span><span>Client Portal</span></a></div></div></div><div class="bg-surface-container-lowest h-20"><div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between gap-6"><div class="flex items-center gap-3"><div class="relative flex items-center justify-center"><img alt="Davita Kombat Security" class="w-10 h-10 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida/AEtjO1UCled8xise8oMK6JHXylMu-2rot9O_eo5uMsCbHspn9lnHwuPStkDUQTn4vZZvsw3nqsQeC86hnXxIKbzuB73m2NbBlygp0A1k73p7VN0YV9XkfkBZ9RWJcH_Y6GyKxiU4xzU9EuzB5BRZCmbjJSj_88AsPXRduLxyQBlbIkHDGs0TTb4RkewN_lRQjiT2f1ZbN1RBvp7V5lUWiZ5KEMccdDYHA9LMvff_qZKNjc6wq7lDj3PD5j-Fv24yBAZv9UtzqEbvRfKom_Q"/><span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-secondary rounded-full ring-2 ring-surface-container-lowest"></span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-primary leading-none font-bold">Davita Kombat</span><span class="font-label-tactical text-label-tactical text-outline uppercase tracking-wider">Security Services Nigeria</span></div></div><nav class="hidden xl:flex items-center gap-7" data-active-classes="text-secondary font-bold"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="#">Home</a><a aria-current="page" class="transition-colors text-secondary font-bold" data-path="about-us" href="#">About Us</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="guarding-patrol" href="#">Guarding &amp; Patrol</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="tech-cctv" href="#">Tech &amp; CCTV</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="sectors" href="#">Sectors</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="contact-quote" href="#">Contact &amp; Quote</a></nav><div class="flex items-center gap-3"><a class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-error hover:bg-on-error-container text-on-error font-label-tactical text-label-tactical uppercase tracking-wider shadow-[0_2px_6px_rgba(186,26,26,0.25)] transition-colors" data-path="emergency-dispatch" href="#"><span class="material-symbols-outlined text-[18px]">shield</span><span>EMERGENCY / REQUEST QUOTE</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida/AEtjO1UCled8xise8oMK6JHXylMu-2rot9O_eo5uMsCbHspn9lnHwuPStkDUQTn4vZZvsw3nqsQeC86hnXxIKbzuB73m2NbBlygp0A1k73p7VN0YV9XkfkBZ9RWJcH_Y6GyKxiU4xzU9EuzB5BRZCmbjJSj_88AsPXRduLxyQBlbIkHDGs0TTb4RkewN_lRQjiT2f1ZbN1RBvp7V5lUWiZ5KEMccdDYHA9LMvff_qZKNjc6wq7lDj3PD5j-Fv24yBAZv9UtzqEbvRfKom_Q"/></div></div></div></header><main class="w-full pt-[120px] bg-surface min-h-[calc(100vh-120px)]"><div class="flex flex-col w-full">
+<!-- Top Tactical Quick-Strip / Breadcrumb -->
+<section class="w-full bg-surface-container-low py-4 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-secondary flex items-center gap-1 transition-colors" data-path="home" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+<span>Home</span>
+</a>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-bold">About Us</span>
+<span class="text-outline-variant">/</span>
+<span class="text-secondary font-label-tactical text-label-tactical">INSTITUTIONAL PROFILE</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-surface-container-highest text-primary font-label-tactical text-label-tactical uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          OPERATIONAL STATE: ACTIVE / DEFCON 4 STABLE
+        </span>
+<span class="hidden md:inline-flex text-label-md font-label-md text-on-surface-variant">
+          EST. 2008 • VICTORIA ISLAND, LAGOS
+        </span>
+</div>
+</div>
+</section>
+<!-- Editorial Hero Section -->
+<section class="w-full bg-surface py-16 lg:py-24 px-6 lg:px-12 relative overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 flex flex-col space-y-6">
+<div class="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-surface-container text-secondary font-label-tactical text-label-tactical tracking-widest uppercase">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+          Tier-1 Licensed Private Guard Company
+        </div>
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight uppercase">
+          Securing Nigeria's Future With Integrity, Discipline &amp; Precision.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          Founded in Lagos to bridge the gap between traditional static guarding and international tactical doctrine, Davita Kombat deploys rigorously vetted, technology-assisted protective units to multinational corporations, diplomatic missions, and critical infrastructure across Nigeria.
+        </p>
+<div class="pt-4 flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center gap-2 px-6 py-3.5 rounded bg-primary hover:bg-primary-container text-on-primary font-label-tactical text-label-tactical uppercase tracking-wider shadow-sm transition-all" data-path="contact-quote" href="#">
+<span>Review Capabilities &amp; Quote</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-3.5 rounded bg-surface-container hover:bg-surface-variant text-primary font-label-tactical text-label-tactical uppercase tracking-wider transition-all" data-path="tech-cctv" href="#">
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+<span>View Technology Stack</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-xl overflow-hidden shadow-xl bg-surface-container">
+<img class="w-full h-[520px] object-cover object-center" data-alt="Two professional Nigerian security officers, one man and one woman, standing proudly side-by-side in crisp navy blue tactical uniforms with branded Davita Kombat chest patches and matching caps, in front of a modern glass skyscraper entrance in Victoria Island Lagos under bright daylight. Clean corporate architectural aesthetic with deep navy blue, cool slate gray, and bright sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBerzYejfTzJDKuFwIm7wV6oqLjUuDsmFXpQNCRdiZ4n6KSuS5SmS3JLdM-OTEGvBDXZlyJ7Ydg-6noTw4jK5OZ2ZoZHci7rgJZtKZ31-dtwG3vba4hLPyED_lH6mpfoEuKplsi_yLwfgvhE0hP4RuNXHVj41PCjyWAEBL1QyAg0X8O6EbXSiT98sKbf80QBCrMI9wu3mS4oaB7CzhumJoPVq9Eg5m-__QTLF0IBk4z-lYa_fjlpPOI8Q"/>
+<div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-primary/95 via-primary/70 to-transparent text-on-primary">
+<div class="flex items-center justify-between pb-2">
+<span class="font-label-tactical text-label-tactical uppercase tracking-wider text-primary-fixed">Guard Force Deployment Alpha</span>
+<span class="px-2 py-0.5 rounded bg-secondary text-[11px] font-bold text-on-secondary uppercase">Active Watch</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-primary">Vetted. Uniformed. Disciplined.</p>
+<p class="font-body-sm text-body-sm text-surface-container-high/80">Officers stationed at premier commercial tower, Ikoyi-Victoria Island corridor.</p>
+</div>
+</div>
+<div class="absolute -bottom-6 -left-6 hidden sm:flex flex-col bg-surface-container-lowest p-5 rounded-lg shadow-lg max-w-xs">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary leading-tight font-bold">100%</p>
+<p class="font-label-md text-label-md text-on-surface-variant">NSCDC &amp; NPF Vetting Rate</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Metric Badges Strip -->
+<section class="w-full bg-surface-container-lowest py-10 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="p-6 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-display-lg text-display-lg text-primary font-extrabold tracking-tight">16+</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">Years in Theater</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Continuous mission-readiness and protection delivery across 22 Nigerian states.</p>
+</div>
+<div class="p-6 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-display-lg text-display-lg text-secondary font-extrabold tracking-tight">1,850+</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">Tactical Operatives</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Full-time trained static guards, K9 handlers, and mobile escort specialists.</p>
+</div>
+<div class="p-6 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-display-lg text-display-lg text-primary font-extrabold tracking-tight">24/7</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">Dual Command Centers</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Redundant AI-monitored operations hubs in Victoria Island, Lagos and CBD, Abuja.</p>
+</div>
+<div class="p-6 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-display-lg text-display-lg text-secondary font-extrabold tracking-tight">&lt; 7m</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">Dispatch Response</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Guaranteed urban rapid reaction force response within Lagos Island &amp; Abuja core.</p>
+</div>
+</div>
+</section>
+<!-- Corporate Story & Mission Split -->
+<section class="w-full bg-surface py-20 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto space-y-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 relative">
+<div class="rounded-xl overflow-hidden shadow-lg bg-surface-container">
+<img class="w-full h-[440px] object-cover" data-alt="Modern high-tech security operations command center in Lagos Nigeria with multiple large video wall monitors displaying real-time CCTV surveillance feeds, satellite maps, and analytical data charts. Nigerian operations officers in dark uniform shirts supervising consoles with blue LED dashboard lighting, daylight streams from windows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhRlAVjqxnWHL-rkhq3cyHCAnKPMrmfUQYmeOBGbhoULWtwpXkVJM1n1nwp1x0NTP5PH_O6nLOlL2-O8_e0g6Zo0_jTgJ-Bdzryfc-O2Myrd57MYSxTGgxXqiu4MX6hKT5BKfavxNANyhmR4_EzZsw33YhLaS1F7hMDUjLxrzNNyPnfE_shlbw8L9GIpwD36q1GEIq1l5AN4pqiCMKdHzndRIXkAqG1voXh91DAOH47Hswp-R_VztiUw"/>
+</div>
+<div class="mt-4 p-4 rounded bg-surface-container-high flex items-center justify-between">
+<span class="font-label-tactical text-label-tactical text-primary uppercase">C4I CONTROL ROOM • VICTORIA ISLAND HQ</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">ISO 9001:2015 AUDITED</span>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col space-y-6">
+<span class="font-label-tactical text-label-tactical text-secondary tracking-widest uppercase">THE GENESIS &amp; OPERATIONAL DOCTRINE</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">
+            Engineering Security to International Defense Standards
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Davita Kombat was created by seasoned defense advisors, intelligence alumni, and corporate risk professionals who observed a critical deficit in the local private security apparatus: while demand for protection surged, field guard forces suffered from inadequate training, poor welfare, and primitive situational response protocols.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Taking cues from world-class protective services and pioneering Nigerian operators like Kingsguards, Davita Kombat transformed the model into an institution-first force. We treat private security not as casual gatekeeping, but as a proactive layer of civil defense, economic continuity, and human dignity.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+<div class="p-5 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2 text-primary font-headline-sm text-headline-sm mb-2">
+<span class="material-symbols-outlined text-secondary">track_changes</span>
+<span>Our Mission</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                To preserve corporate continuity, protect human life, and fortify critical Nigerian assets through certified personnel, intelligent electronic countermeasures, and rapid-dispatch capability.
+              </p>
+</div>
+<div class="p-5 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2 text-primary font-headline-sm text-headline-sm mb-2">
+<span class="material-symbols-outlined text-secondary">visibility</span>
+<span>Our Vision</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                To be West Africa's gold standard in private security integration—acknowledged for unyielding integrity, exceptional officer welfare, and technological superiority.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Davita Kombat Academy & Training Doctrine -->
+<section class="w-full bg-surface-container-low py-20 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto space-y-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<span class="font-label-tactical text-label-tactical text-secondary tracking-widest uppercase">THE FOUNDATION OF EXCELLENCE</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold mt-2">
+            The Davita Kombat Training Academy
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-2">
+            A guard is only as dependable as their training and character. Our proprietary 6-week residential curriculum in Epe, Lagos combines rigorous field doctrine with executive etiquette.
+          </p>
+</div>
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-2 px-4 py-2 rounded bg-surface-container-highest text-primary font-label-tactical text-label-tactical uppercase">
+<span class="material-symbols-outlined text-secondary text-[18px]">school</span>
+            CURRICULUM REV. 2025.2
+          </span>
+</div>
+</div>
+<!-- Training 4-Pillar Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Step 1 -->
+<div class="p-6 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-tactical text-label-tactical text-secondary uppercase tracking-widest">PHASE 01</span>
+<span class="material-symbols-outlined text-[28px] text-primary">fingerprint</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Multi-Tier Vetting &amp; Biometrics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Every candidate undergoes automated biometric fingerprinting, Nigerian Police Force (NPF) criminal record checks, continuous residence verification, and dual-guarantor judicial notarization before stepping foot on camp.
+            </p>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low -mx-6 -mb-6 p-4">
+<span class="font-label-tactical text-label-tactical text-primary uppercase">Zero Criminal Record Tolerance</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-6 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary"></div>
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-tactical text-label-tactical text-secondary uppercase tracking-widest">PHASE 02</span>
+<span class="material-symbols-outlined text-[28px] text-primary">fitness_center</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Physical &amp; Tactical Conditioning</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              6 weeks of rigorous endurance drills, unarmed combat defensiveness, baton and restraint techniques, crowd dispersal tactics, and defensive perimeter movement led by former military instructors.
+            </p>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low -mx-6 -mb-6 p-4">
+<span class="font-label-tactical text-label-tactical text-primary uppercase">Daily 10km • Hand-to-Hand CQB</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-6 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-tactical text-label-tactical text-secondary uppercase tracking-widest">PHASE 03</span>
+<span class="material-symbols-outlined text-[28px] text-primary">local_fire_department</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Life Safety &amp; Fire Suppression</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Certified hands-on training with industrial fire extinguishers, hydrants, smoke containment, evacuation routing, BLS (Basic Life Support), AED operation, and emergency first aid stabilization.
+            </p>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low -mx-6 -mb-6 p-4">
+<span class="font-label-tactical text-label-tactical text-primary uppercase">Red Cross CPR Certified</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="p-6 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary"></div>
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-tactical text-label-tactical text-secondary uppercase tracking-widest">PHASE 04</span>
+<span class="material-symbols-outlined text-[28px] text-primary">record_voice_over</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Ethics, Human Rights &amp; Etiquette</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Mandatory modules on verbal de-escalation, conflict neutralisation, diplomatic protocol, customer service, human rights under the Nigerian Constitution, and digital report generation.
+            </p>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low -mx-6 -mb-6 p-4">
+<span class="font-label-tactical text-label-tactical text-primary uppercase">Executive Presence Tested</span>
+</div>
+</div>
+</div>
+<!-- Training Gallery Visual Element -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6">
+<div class="relative rounded-lg overflow-hidden shadow-sm h-64 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Outdoor physical drill formation at Davita Kombat security training facility in Nigeria. Security recruits in identical navy tactical uniforms performing synchronized morning physical conditioning and stance training on an athletic drill field under bright African sun." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEY-gANiKRMp_16hoP8n_SfIwncS7TaXZnFIcZM8oY43hXSoxd6NP7IGZl1MkMnZudWS9obkmKB8BykWI29jvLwSmHaxzRe_mDvjrC7hpcwzUiqbssywaYYcq2uQ43QTDDklZUGY22bRpVNXaILCFKqMWdX7wMiW8fer0LL99OfX2eCb9IXKyja_KD0lf1ASXTojcgIy7ED8bLUDDK58E-dzqaIDftaaJ9uDBPx5RaQ14C0WwhgxN-Qg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-4">
+<span class="text-on-primary font-headline-sm text-headline-sm text-[16px]">Formation &amp; Tactical Maneuvers</span>
+</div>
+</div>
+<div class="relative rounded-lg overflow-hidden shadow-sm h-64 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Security instructors in high visibility instructor jackets demonstrating industrial dry-powder fire suppression techniques to uniformed male and female Nigerian security trainees outdoors with controlled demonstration fires and extinguisher units in daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuHclXGH6yFSGPi9iVyrF1Bj3DPtDBHYh19aG0C2zZTDpuJ2Q7sK_TP0-1GPnoPhaG0ZfOvPn4tF0f1G5WKvdf4Ge2uwh3ZIRksPcESvtPmlHENT3noqOeG5VNsi0s4D4vsT7tyG7KxANbOj95ssZ3tEdu0awSCIigOBGaDa_MWcbV0h7J__MITGz9LtMydyh02oxn6xJ2KoQRIaia3bUVYHYjx7psdTisggb7SddPjda-ngrBl43V0w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-4">
+<span class="text-on-primary font-headline-sm text-headline-sm text-[16px]">Fire Response &amp; Evacuation Drills</span>
+</div>
+</div>
+<div class="relative rounded-lg overflow-hidden shadow-sm h-64 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Classroom setting inside modern security academy in Lagos, female and male trainees in neat navy shirts seated at desks with laptops and manuals, learning digital incident logging and diplomatic reception security protocols from an instructor at an interactive smart board." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxbEUlKrHi-AY0jfz6ILTQdrAlKbbUfnFWD70L7Px2ERUA3EbN1lRIP_Cmey-vDT_5Crmi84E4nqdTCJClQ74o9XMZjp1-2lvked4pfgkr4xZf3xpdE_-1AfF-HC_3PYnKFcYWnYMq38tbQTY-xS0S07RfNUJJCj3yJLovqP-EY65H9Vg2YrhHs7IMfXDGYplJVagPk5gAtsrj3Ir4T1x53pDyKxWEYELgyQHu-zgZziCHE7haqsSlnQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-4">
+<span class="text-on-primary font-headline-sm text-headline-sm text-[16px]">Digital Incident Logging &amp; Concierge Etiquette</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Values Matrix -->
+<section class="w-full bg-surface py-20 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto space-y-12">
+<div class="text-center max-w-2xl mx-auto">
+<span class="font-label-tactical text-label-tactical text-secondary tracking-widest uppercase">THE KOMBAT CREED</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold mt-2">
+          Values That Govern Every Post &amp; Patrol
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+          Our core pillars differentiate Davita Kombat from legacy guard agencies. We uphold military-grade execution while treating every officer as our greatest strategic capital.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="p-8 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[28px]">shield</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Uncompromising Vigilance</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Zero lapses at perimeter access points. Routine surprise inspections by Field Supervisors at 0200 and 0400 hours ensure guards remain alert, engaged, and ready for threat neutralisation.
+            </p>
+</div>
+<div class="mt-6 flex items-center gap-1.5 text-secondary font-label-tactical text-label-tactical uppercase">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Continuous Perimeter Scans</span>
+</div>
+</div>
+<div class="p-8 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-secondary mb-6">
+<span class="material-symbols-outlined text-[28px]">gavel</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Operational Integrity</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Every incident log, visitor manifest, and patrol timestamp is tamper-proof. We maintain an independent Whistleblower Channel and conduct mandatory random drug/alcohol screening.
+            </p>
+</div>
+<div class="mt-6 flex items-center gap-1.5 text-secondary font-label-tactical text-label-tactical uppercase">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Immutable Reporting</span>
+</div>
+</div>
+<div class="p-8 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[28px]">memory</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Technological Edge</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Guards are synced via GPS NFC patrol wands, facial recognition visitor terminals, body-worn cameras in critical areas, and automated panic links back to our Lagos C4I desk.
+            </p>
+</div>
+<div class="mt-6 flex items-center gap-1.5 text-secondary font-label-tactical text-label-tactical uppercase">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>AI-Driven Patrol Tracking</span>
+</div>
+</div>
+<div class="p-8 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-secondary mb-6">
+<span class="material-symbols-outlined text-[28px]">volunteer_activism</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Rapid Welfare Support</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              A content guard is a vigilant guard. We pay top-decile industry salaries on or before the 25th, provide comprehensive health HMO, life insurance, and subsidized operational meals.
+            </p>
+</div>
+<div class="mt-6 flex items-center gap-1.5 text-secondary font-label-tactical text-label-tactical uppercase">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Industry-Leading Officer Pay</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Executive Leadership Team -->
+<section class="w-full bg-surface-container-low py-20 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto space-y-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<span class="font-label-tactical text-label-tactical text-secondary tracking-widest uppercase">COMMAND STRUCTURE</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold mt-2">
+            Executive Leadership &amp; Board
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-2">
+            Led by veterans of the Nigerian Armed Forces, State Security Services, and Fortune 500 risk departments with over 90 years of combined operational command.
+          </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 bg-surface-container-highest rounded text-primary font-label-tactical text-label-tactical uppercase">
+            HEADQUARTERS BOARD
+          </span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Leader 1 -->
+<div class="bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden flex flex-col group">
+<div class="h-72 w-full overflow-hidden relative bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Professional studio portrait of an authoritative Nigerian male executive in his early 50s, wearing an executive dark charcoal bespoke suit with a lapel badge, confident leadership expression, ex-military demeanor, warm office lighting with subtle navy background tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGEEYQ6zXZIavjdh12T0J2HPQR5OX2jndvQaIIRB6jVrIsrDocpjB8L7xdnq4yqMcUQpqF-iW8aV4XCryH87rCuGLnfJjXbr2j-iqr3F8No45gneECoBXy1bjJlZx_bj4LXxZGDvJ7s9s3fZxFll6yo13GFaCeYuzYSkFzHjMGjGqw-RL0UtehTVcazQ2veHLn29Oj_BJpGYgiBO6PpE7xifV7mksBl_dnwAcfsRHK4gfa02pPjbqAjg"/>
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-primary text-on-primary font-label-tactical text-label-tactical uppercase">
+              EX-ARMY BRIG.
+            </div>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Col. Babatunde Adeyemi (Rtd.)</h3>
+<p class="font-label-md text-label-md text-secondary font-semibold mt-1">Managing Director &amp; CEO</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
+                Over 28 years commanding tactical divisions in the Nigerian Army followed by 10 years directing security for international energy consortia in the Niger Delta.
+              </p>
+</div>
+<div class="mt-4 pt-4 bg-surface-container-low -mx-6 -mb-6 p-4 flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">shield</span>DSS Fellow</span>
+<span class="text-primary font-semibold">Victoria Island</span>
+</div>
+</div>
+</div>
+<!-- Leader 2 -->
+<div class="bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden flex flex-col group">
+<div class="h-72 w-full overflow-hidden relative bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Distinguished Nigerian female executive in her late 40s in professional dark navy blazer with folded arms, intelligent and determined expression, corporate boardroom backdrop in Lagos with subtle ambient light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiIOsaxEL92dTgEIP8kDcCj-Ij-msodDsAKzc5_lJMEoWTVinighAy_7azCOmb7zmvf3H0ffo1JrysnQW4TbcZnyzuZ7afLSeu34nHzffCqpSNTi0jzTXZJ3xer_o9c3hNH-9QxkQ0up-2cSzkjahfLRKDxiftv3UNo1TP84dyuADEwLUHEdt3noTg2k6MLJlKVra9pKJiOiLsZW-Oc82f1T5ykamwUkiiRAtUYj9cpNzsjeIcOSrV5g"/>
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-tactical text-label-tactical uppercase">
+              EX-DOP POLICE
+            </div>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Hajia Amina Sanusi, CPP</h3>
+<p class="font-label-md text-label-md text-secondary font-semibold mt-1">Director of Field Operations</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
+                Former Commissioner of Police (Operations) with specialized counter-terrorism training from Bramshill Police College, UK. Oversees our 1,850+ active guarding division.
+              </p>
+</div>
+<div class="mt-4 pt-4 bg-surface-container-low -mx-6 -mb-6 p-4 flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">verified</span>ASIS Member</span>
+<span class="text-primary font-semibold">Abuja Base</span>
+</div>
+</div>
+</div>
+<!-- Leader 3 -->
+<div class="bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden flex flex-col group">
+<div class="h-72 w-full overflow-hidden relative bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Portrait of a young tech-forward Nigerian male leader in late 30s wearing a modern navy shirt and glasses, smiling confidently against high-tech control center background with subtle blue server racks." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtiFjSZHCtoVFHiqzM1YvZcff5sShRKD2pv2T3y3oiPOfs-ugOtCrDM9p9TcL8tB0aU8NbomRUbTaFf1Xsv1fgsGa5ClcmfPBPvGjke5Y8UKP5k_vR06JntgJbzRNimM20tMAZeuc2hBL-gt5sxOZEG0n2YkZgZE0lwpnh6PNHUJayEsjMhhZQdJraFc797xvrroQ3q_40Z71pNcheZAWvMR5nvkpAjegQIpz_mBpwNLRH3voUh9b8bw"/>
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-primary text-on-primary font-label-tactical text-label-tactical uppercase">
+              CYBER &amp; IOT
+            </div>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Dr. Chinedu Okafor</h3>
+<p class="font-label-md text-label-md text-secondary font-semibold mt-1">Chief Technology Officer (CTO)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
+                Pioneered algorithmic crowd video surveillance and IoT remote perimeter tripwires. Holds patents in automated biometric access verification architectures.
+              </p>
+</div>
+<div class="mt-4 pt-4 bg-surface-container-low -mx-6 -mb-6 p-4 flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">memory</span>C4I Systems</span>
+<span class="text-primary font-semibold">Lagos Tech Lab</span>
+</div>
+</div>
+</div>
+<!-- Leader 4 -->
+<div class="bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden flex flex-col group">
+<div class="h-72 w-full overflow-hidden relative bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Portrait of a sharp corporate Nigerian woman in early 40s in elegant charcoal professional attire, holding a leather folio, confident smile, clean corporate architectural background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRED9A2RcQh7O8b3wjG82dkZKjbkeZC8BSjwVRflk4jeBzrvdXuuL9BulrY6RoHg-wEljNpJDIvMF0lqg_pZMpIXpKK-RvPg44JT_Vm8DTGOYYNGbqzan79JXDUKgEyB7x564v9ksY2Vnl4rGC1XzMrTgiVVpw3MCd3SmXINY_4h7FqSeY3ruDC83gkNe47QLWj8BZ55Ez2LwYHqyskIPGXQa3imO0OsH1TJymkkIagukcwPMS0Jta6Q"/>
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-tactical text-label-tactical uppercase">
+              LEGAL COUNSEL
+            </div>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Barr. Folashade Adeleke, SAN</h3>
+<p class="font-label-md text-label-md text-secondary font-semibold mt-1">General Counsel &amp; Regulatory Head</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
+                Expert in Nigerian private guard regulatory statutes, labor compliances, maritime cabotage, and liaison protocols with federal defense agencies.
+              </p>
+</div>
+<div class="mt-4 pt-4 bg-surface-container-low -mx-6 -mb-6 p-4 flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">policy</span>Bar Council</span>
+<span class="text-primary font-semibold">Compliance Office</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Accreditations & Regulatory Matrix -->
+<section class="w-full bg-surface py-20 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto space-y-12">
+<div class="text-center max-w-2xl mx-auto">
+<span class="font-label-tactical text-label-tactical text-secondary tracking-widest uppercase">REGULATORY RIGOR</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold mt-2">
+          Licenses &amp; Institutional Accreditations
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+          Davita Kombat operates with 100% legal clarity under the Federal Ministry of Interior and all statutory Nigerian regulatory frameworks.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Lic 1 -->
+<div class="p-6 rounded-lg bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded bg-surface-container-highest text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<span class="font-label-tactical text-label-tactical text-secondary uppercase">FEDERAL REGISTRATION</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mt-1">NSCDC Class-A License</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+              Highest-tier certification issued by the Nigeria Security and Civil Defence Corps (Lic: 0092/PGC/FED), allowing nationwide tactical static and mobile deployment.
+            </p>
+</div>
+<div class="mt-6 pt-3 flex items-center justify-between font-label-md text-label-md text-primary font-semibold">
+<span>Renewed • 2025/2026</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span>
+</div>
+</div>
+<!-- Lic 2 -->
+<div class="p-6 rounded-lg bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded bg-surface-container-highest text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[24px]">corporate_fare</span>
+</div>
+<span class="font-label-tactical text-label-tactical text-secondary uppercase">GLOBAL BENCHMARK</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mt-1">ASIS Corporate Member</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+              Active corporate membership in ASIS International (Chapter 206 Lagos), adhering strictly to global standards in security management and enterprise risk reduction.
+            </p>
+</div>
+<div class="mt-6 pt-3 flex items-center justify-between font-label-md text-label-md text-primary font-semibold">
+<span>Chapter 206 Accredited</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span>
+</div>
+</div>
+<!-- Lic 3 -->
+<div class="p-6 rounded-lg bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded bg-surface-container-highest text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<span class="font-label-tactical text-label-tactical text-secondary uppercase">STANDARDS ORGANIZATION</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mt-1">ISO 9001:2015 Quality</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+              Standardized, audited quality management across our control rooms, personnel intake, site risk appraisals, and guard dispatch protocols.
+            </p>
+</div>
+<div class="mt-6 pt-3 flex items-center justify-between font-label-md text-label-md text-primary font-semibold">
+<span>Cert No: QMS-NG-8891</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span>
+</div>
+</div>
+<!-- Lic 4 -->
+<div class="p-6 rounded-lg bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded bg-surface-container-highest text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[24px]">local_police</span>
+</div>
+<span class="font-label-tactical text-label-tactical text-secondary uppercase">STATE COOPERATION</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mt-1">NPF Spy Police Link</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+              Licensed integration framework with the Nigerian Police Force Supernumerary (SPY) unit for high-value logistics escorts and cash-in-transit protective operations.
+            </p>
+</div>
+<div class="mt-6 pt-3 flex items-center justify-between font-label-md text-label-md text-primary font-semibold">
+<span>MoU Active • Tier-1</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Corporate Social Responsibility (CSR) -->
+<section class="w-full bg-surface-container-lowest py-20 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 space-y-6">
+<span class="font-label-tactical text-label-tactical text-secondary tracking-widest uppercase">GIVING BACK TO NIGERIA</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">
+          Protecting Our Communities: The Kombat Shield Initiative
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          True security cannot exist behind private high walls while the surrounding community is neglected. Through the Kombat Shield Initiative, Davita Kombat actively invests in grassroots public safety, education, and career paths for Nigerian veterans.
+        </p>
+<div class="space-y-4 pt-2">
+<div class="flex items-start gap-4 p-4 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5">school</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-semibold">Safe Schools Perimeter Program</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Providing complimentary security audits, CCTV installations, and unarmed gate wardens to 18 public primary and secondary schools in vulnerable Lagos and Abuja suburbs.
+              </p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5">military_tech</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-semibold">Veteran Career Reintegration</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Direct employment pipeline and civilian career retraining for honorably discharged personnel of the Nigerian Armed Services, with pension and healthcare support.
+              </p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5">nightlight_round</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-semibold">Night-Owl Community Neighborhood Patrols</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Volunteer motorized night patrols supporting local community development associations (CDAs) across Eti-Osa and Ikeja local government areas.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 relative">
+<div class="rounded-xl overflow-hidden shadow-lg bg-surface-container">
+<img class="w-full h-[480px] object-cover" data-alt="Uniformed Davita Kombat community outreach officers in navy uniforms smiling and engaging warmly with Nigerian schoolchildren in school uniforms outside a primary school gate in Lagos under sunny skies, highlighting school safety and community support." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhaMCsTmBeUcKT7NOHJ_wFS8FUncvsxZv6ALWGO7uH_I-7K8emNLF4Tkakyrwcyagackrlnsm5D_rIWgLxcvg_MhN8-X_-mv8fDCIB56o1sH53ZOHhNUj-4vdwt2lzeqTvoRpXLOI6E6LbQSCNwdI4EeiPzct39Pze7FqZ6DIz7WsBTkw6irqHpsdo3z5RqYz2tb9nZ7atY_d-tUDIpU_u5eqUiiuu4NFmwXXw7YZfSEdPd9DVm-n5Fw"/>
+</div>
+<div class="absolute -bottom-6 -right-6 hidden sm:block p-6 rounded-lg bg-primary text-on-primary shadow-xl max-w-xs">
+<p class="font-headline-lg text-headline-lg text-secondary-fixed font-extrabold leading-none">18+</p>
+<p class="font-headline-sm text-headline-sm mt-1">Adopted Schools Protected</p>
+<p class="font-body-sm text-body-sm text-surface-container-high/80 mt-1">Free perimeter monitoring protecting over 12,000 pupils daily.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Risk Advisory & Security Assessment CTA -->
+<section class="w-full bg-surface-container-high py-20 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto rounded-2xl bg-surface-container-lowest p-8 lg:p-14 shadow-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<div class="lg:col-span-8 space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-secondary font-label-tactical text-label-tactical uppercase">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+            CONFIDENTIAL ENGAGEMENT
+          </div>
+<h2 class="font-headline-xl text-headline-xl text-primary font-extrabold">
+            Ready to Upgrade Your Corporate Security Posture?
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
+            Connect directly with our Victoria Island or Abuja command team. We deliver on-site risk audits, guard force transition plans, and unified CCTV coverage proposals within 48 hours.
+          </p>
+<div class="pt-4 flex flex-wrap items-center gap-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase">Emergency Dispatch Direct</p>
+<p class="font-headline-sm text-headline-sm text-primary font-bold">+234 1 800-KOMBAT</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase">Corporate Client Inquiries</p>
+<p class="font-headline-sm text-headline-sm text-primary font-bold">ops@davitakombat.com</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-4">
+<a class="w-full py-4 px-6 rounded bg-primary hover:bg-primary-container text-on-primary font-label-tactical text-label-tactical text-center uppercase tracking-wider shadow-md transition-all" data-path="contact-quote" href="#">
+            Schedule Site Threat Assessment
+          </a>
+<a class="w-full py-4 px-6 rounded bg-surface-container hover:bg-surface-variant text-primary font-label-tactical text-label-tactical text-center uppercase tracking-wider transition-all" data-path="guarding-patrol" href="#">
+            Explore Guarding &amp; Patrol Services
+          </a>
+<p class="text-center font-label-md text-label-md text-outline">
+            Class-A Certified • NDA Guaranteed • Fast Deployment
+          </p>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-primary-container text-on-primary-fixed border-t border-primary"><div class="max-w-7xl mx-auto px-6 lg:px-12 pt-16 pb-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-primary-fixed-dim/20"><div class="lg:col-span-2 space-y-4"><div class="flex items-center gap-3"><img alt="Davita Kombat Seal" class="w-9 h-9 rounded-full object-cover ring-2 ring-primary-fixed-dim/40" src="https://lh3.googleusercontent.com/aida/AEtjO1UCled8xise8oMK6JHXylMu-2rot9O_eo5uMsCbHspn9lnHwuPStkDUQTn4vZZvsw3nqsQeC86hnXxIKbzuB73m2NbBlygp0A1k73p7VN0YV9XkfkBZ9RWJcH_Y6GyKxiU4xzU9EuzB5BRZCmbjJSj_88AsPXRduLxyQBlbIkHDGs0TTb4RkewN_lRQjiT2f1ZbN1RBvp7V5lUWiZ5KEMccdDYHA9LMvff_qZKNjc6wq7lDj3PD5j-Fv24yBAZv9UtzqEbvRfKom_Q"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-primary font-bold">Davita Kombat</span><span class="font-label-tactical text-label-tactical text-primary-fixed-dim uppercase tracking-wider">Guarding • Surveillance • Tactical Escort</span></div></div><p class="font-body-sm text-body-sm text-surface-container-high/80 pr-6">Federal Republic of Nigeria Private Guard Company (PGC) Tier-1 Certified Operator. Defending diplomatic missions, industrial facilities, maritime hubs, and corporate infrastructure across West Africa since 2008.</p><div class="flex flex-wrap gap-2 pt-2"><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-primary text-primary-fixed font-label-tactical text-label-tactical uppercase"><span class="material-symbols-outlined text-[14px] text-secondary-fixed">verified</span>NSCDC LIC: 0092/PGC/FED</span><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-primary text-primary-fixed font-label-tactical text-label-tactical uppercase"><span class="material-symbols-outlined text-[14px] text-secondary-fixed">shield_with_heart</span>ISO 9001:2015 CERTIFIED</span></div></div><div><h4 class="font-headline-sm text-headline-sm text-on-primary font-semibold mb-4 text-[16px]">Security Solutions</h4><ul class="space-y-2.5 font-body-sm text-body-sm"><li class="flex items-center gap-2 text-surface-container-high/80 hover:text-on-primary"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><span>Static Guard Force</span></li><li class="flex items-center gap-2 text-surface-container-high/80 hover:text-on-primary"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><span>Armed Escort &amp; VIP MPU</span></li><li class="flex items-center gap-2 text-surface-container-high/80 hover:text-on-primary"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><span>AI CCTV &amp; Control Rooms</span></li><li class="flex items-center gap-2 text-surface-container-high/80 hover:text-on-primary"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><span>Access Control &amp; Biometrics</span></li><li class="flex items-center gap-2 text-surface-container-high/80 hover:text-on-primary"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><span>Canine Unit (K9) Patrols</span></li></ul></div><div><h4 class="font-headline-sm text-headline-sm text-on-primary font-semibold mb-4 text-[16px]">Command Centers</h4><div class="space-y-4 font-body-sm text-body-sm text-surface-container-high/80"><div><p class="font-bold text-on-primary flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary-fixed">location_on</span>Lagos HQ (Coastal Ops)</p><p>Plot 14B Adeola Odeku St, Victoria Island, Lagos State</p></div><div><p class="font-bold text-on-primary flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary-fixed">location_on</span>Abuja Base (Federal Ops)</p><p>Plot 824 Constitution Ave, CBD, Abuja FCT</p></div></div></div><div><h4 class="font-headline-sm text-headline-sm text-on-primary font-semibold mb-4 text-[16px]">Ops Intelligence Alert</h4><p class="font-body-sm text-body-sm text-surface-container-high/80 mb-3">Subscribe to monthly Nigerian security bulletins and threat matrix reports.</p><div class="flex flex-col gap-2"><input class="w-full px-3 py-2 text-body-sm bg-primary border border-outline/30 rounded text-on-primary placeholder:text-surface-dim focus:outline-none focus:border-secondary-container" placeholder="executive@company.com" type="email"/><button class="w-full py-2 px-3 rounded bg-secondary hover:bg-secondary-container text-on-secondary font-label-tactical text-label-tactical uppercase tracking-wider transition-colors" type="button">RECEIVE BRIEFINGS</button></div></div></div><div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-surface-container-high/60"><div>© 2025 Davita Kombat Security Services Ltd. RC: 489210. All Rights Reserved.</div><div class="flex items-center gap-6 font-label-md text-label-md"><a class="hover:text-on-primary transition-colors" data-path="regulatory-compliance" href="#">NSCDC Reg. Compliance</a><a class="hover:text-on-primary transition-colors" data-path="privacy-policy" href="#">Terms of Engagement</a><a class="hover:text-on-primary transition-colors" data-path="whistleblower-hotline" href="#">Whistleblower Channel</a></div></div></div></footer></body></html>
