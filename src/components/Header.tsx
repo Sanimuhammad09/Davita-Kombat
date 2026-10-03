@@ -34,44 +34,6 @@ export function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 shadow-[0_1px_8px_rgba(11,37,69,0.06)] bg-surface-container-lowest">
-        <div className="bg-surface-container-low text-on-surface-variant text-label-md font-label-md border-b border-surface-container-high/60 hidden md:block">
-          <div className="max-w-7xl mx-auto px-6 lg:px-12 h-10 flex items-center justify-between">
-            <div className="flex items-center gap-6">
-              <div className="flex items-center gap-1.5 text-on-surface">
-                <span className="material-symbols-outlined text-[16px] text-error">
-                  emergency
-                </span>
-                <span className="font-semibold">DISPATCH:</span>
-                <span className="text-error font-bold tracking-wide">
-                  +234 1 800-KOMBAT
-                </span>
-                <span className="text-outline-variant">|</span>
-                <span>0700-DAVITA-OPS</span>
-              </div>
-              <div className="hidden lg:flex items-center gap-1.5 text-on-surface-variant">
-                <span className="material-symbols-outlined text-[16px] text-secondary">
-                  hub
-                </span>
-                <span>24/7 Command: Victoria Island Lagos &amp; CBD Abuja</span>
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <span className="hidden md:inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-tactical text-label-tactical uppercase tracking-wider">
-                NSCDC CLASS-A LICENSED
-              </span>
-              <a
-                className="inline-flex items-center gap-1 text-primary hover:text-secondary font-semibold transition-colors"
-                data-path="client-portal"
-                href="#"
-              >
-                <span className="material-symbols-outlined text-[16px]">
-                  lock
-                </span>
-                <span>Client Portal</span>
-              </a>
-            </div>
-          </div>
-        </div>
         <div className="relative">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between gap-4 sm:gap-6">
             <Link to="/" className="flex items-center gap-2 sm:gap-3 shrink-0" onClick={() => setIsMobileMenuOpen(false)}>

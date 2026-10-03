@@ -44,35 +44,6 @@ function IndexComponent() {
       <Header />
       <main className="w-full pt-[120px] bg-[#fafafa] min-h-screen font-sans">
         
-        {/* Pinned Tactical Deployment Bar */}
-        <section className="bg-surface-container-low text-on-surface px-6 lg:px-12 py-3 shadow-sm">
-          <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <span className="inline-flex relative flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
-              </span>
-              <span className="font-label-tactical text-label-tactical text-primary uppercase tracking-wider">
-                DEFENSE READINESS: DEFCON-4 NATIONAL / URBAN PATROLS DISPATCHED
-              </span>
-            </div>
-            <div className="flex items-center gap-6 font-body-sm text-body-sm">
-              <div className="flex items-center gap-1.5 text-on-surface-variant">
-                <span className="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
-                <span>Federal PGC Reg: 0092/PGC/FED</span>
-              </div>
-              <div className="hidden md:flex items-center gap-1.5 text-on-surface-variant">
-                <span className="material-symbols-outlined text-[16px] text-secondary">satellite_alt</span>
-                <span>TOC Active Feeds: 418 Monitored Sites</span>
-              </div>
-              <div className="flex items-center gap-1 px-2.5 py-1 rounded bg-error-container text-on-error-container font-label-tactical text-label-tactical uppercase font-bold">
-                <span className="material-symbols-outlined text-[14px]">notifications_active</span>
-                <span>RAPID SLA: &lt;15 MINS</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Hero Section */}
         <section className="relative w-full h-[calc(100vh-6rem)] min-h-[600px] max-h-[800px] overflow-hidden bg-[#0A192F]">
           {slides.map((slide, index) => (
