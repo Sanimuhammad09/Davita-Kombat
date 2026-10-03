@@ -99,7 +99,7 @@ function OurCoreValuesPage() {
                 </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {coreValues.map((value, index) => (
+                    {coreValues.map((value) => (
                         <div 
                             key={value.id} 
                             className="relative bg-[#2563eb] p-8 min-h-[280px] flex flex-col shadow-md overflow-hidden group"
