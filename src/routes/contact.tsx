@@ -35,7 +35,9 @@ function ContactPage() {
                             <span className="material-symbols-outlined text-secondary text-2xl">call</span>
                             <div>
                                 <p className="text-xs text-white/50 uppercase tracking-widest font-bold mb-1">Call Us</p>
-                                <p className="font-bold text-lg">+234 1 342 6900</p>
+                                <p className="font-bold text-sm">08031696371</p>
+                                <p className="font-bold text-sm">08021179415</p>
+                                <p className="font-bold text-sm">08035931515</p>
                             </div>
                         </div>
                         {/* Box 2 */}
@@ -43,7 +45,8 @@ function ContactPage() {
                             <span className="material-symbols-outlined text-secondary text-2xl">mail</span>
                             <div>
                                 <p className="text-xs text-white/50 uppercase tracking-widest font-bold mb-1">Email Us</p>
-                                <p className="font-bold text-lg">operations@davitakombat.com</p>
+                                <p className="font-bold text-sm">davita.kombat@gmail.com</p>
+                                <p className="font-bold text-sm">hr.davita2025ksl@gmail.com</p>
                             </div>
                         </div>
                         {/* Box 3 */}
@@ -136,7 +139,7 @@ function ContactPage() {
                             <div className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-secondary/20 text-secondary text-xs font-bold tracking-widest uppercase mb-6">
                                 Headquarters
                             </div>
-                            <h3 className="text-2xl font-bold mb-10">Head Office - Lagos</h3>
+                            <h3 className="text-2xl font-bold mb-10">Head Office</h3>
 
                             <div className="flex flex-col gap-8">
                                 <div className="flex items-start gap-5">
@@ -145,9 +148,9 @@ function ContactPage() {
                                     </div>
                                     <div>
                                         <p className="text-[10px] text-white/50 font-bold uppercase tracking-widest mb-1">Phone</p>
-                                        <p className="font-medium mb-1">+234 1 342 6900</p>
-                                        <p className="font-medium mb-1">+234 1 342 6902</p>
-                                        <p className="font-medium">+234 812 945 1102-4</p>
+                                        <p className="font-medium mb-1">08031696371</p>
+                                        <p className="font-medium mb-1">08021179415</p>
+                                        <p className="font-medium">08035931515</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-5">
@@ -156,7 +159,8 @@ function ContactPage() {
                                     </div>
                                     <div>
                                         <p className="text-[10px] text-white/50 font-bold uppercase tracking-widest mb-1">Email</p>
-                                        <p className="font-medium">operations@davitakombat.com</p>
+                                        <p className="font-medium mb-1">davita.kombat@gmail.com</p>
+                                        <p className="font-medium">hr.davita2025ksl@gmail.com</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-5">
@@ -164,13 +168,26 @@ function ContactPage() {
                                         <span className="material-symbols-outlined text-secondary text-lg">location_on</span>
                                     </div>
                                     <div>
-                                        <p className="text-[10px] text-white/50 font-bold uppercase tracking-widest mb-1">Address</p>
+                                        <p className="text-[10px] text-white/50 font-bold uppercase tracking-widest mb-1">Head Office</p>
                                         <p className="font-medium text-white/90 leading-relaxed">
-                                            Davita Kombat House<br/>
-                                            Km 10, Lekki-Epe Expressway<br/>
-                                            Near Chevron Roundabout Lekki<br/>
-                                            Lagos, Nigeria.<br/>
-                                            P.O.Box 60341 Federal Secretariat, Ikoyi.
+                                            KM 12 airport road<br/>
+                                            giri village<br/>
+                                            gwagwalada<br/>
+                                            Abuja
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="flex items-start gap-5">
+                                    <div className="w-10 h-10 rounded-full bg-[#0a1a33] flex items-center justify-center shrink-0 border border-white/5">
+                                        <span className="material-symbols-outlined text-secondary text-lg">business</span>
+                                    </div>
+                                    <div>
+                                        <p className="text-[10px] text-white/50 font-bold uppercase tracking-widest mb-1">Branch Office</p>
+                                        <p className="font-medium text-white/90 leading-relaxed">
+                                            KM 12 kachia road<br/>
+                                            by TMD plaza<br/>
+                                            new ungwan modern market<br/>
+                                            Kaduna Nigeria
                                         </p>
                                     </div>
                                 </div>
@@ -199,8 +216,7 @@ function ContactPage() {
                 
                 {/* Pill Tabs */}
                 <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
-                    <button className="px-6 py-2.5 rounded-full bg-primary text-on-primary font-bold text-sm shadow-md">Lagos HQ</button>
-                    <button className="px-6 py-2.5 rounded-full bg-surface text-on-surface-variant font-bold text-sm hover:bg-surface-container border border-surface-container-high transition-colors">Abuja</button>
+                    <button className="px-6 py-2.5 rounded-full bg-primary text-on-primary font-bold text-sm shadow-md">Abuja HQ</button>
                     <button className="px-6 py-2.5 rounded-full bg-surface text-on-surface-variant font-bold text-sm hover:bg-surface-container border border-surface-container-high transition-colors">Port Harcourt</button>
                     <button className="px-6 py-2.5 rounded-full bg-surface text-on-surface-variant font-bold text-sm hover:bg-surface-container border border-surface-container-high transition-colors">Kano</button>
                     <button className="px-6 py-2.5 rounded-full bg-surface text-on-surface-variant font-bold text-sm hover:bg-surface-container border border-surface-container-high transition-colors">Ibadan</button>
@@ -216,7 +232,7 @@ function ContactPage() {
                     {/* Card Header */}
                     <div className="bg-primary text-on-primary p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
                         <div>
-                            <h3 className="text-2xl font-bold mb-2">Head Office (Lagos)</h3>
+                            <h3 className="text-2xl font-bold mb-2">Head Office</h3>
                             <span className="text-secondary font-bold text-xs uppercase tracking-widest">Headquarters</span>
                         </div>
                         <div className="flex items-center gap-4">
@@ -236,9 +252,9 @@ function ContactPage() {
                             </div>
                             <div>
                                 <p className="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest mb-2">Phone</p>
-                                <p className="font-medium text-on-surface mb-1">+234 1 342 6900</p>
-                                <p className="font-medium text-on-surface mb-1">+234 1 342 6902</p>
-                                <p className="font-medium text-on-surface">+234 812 945 1102-4</p>
+                                <p className="font-medium text-on-surface mb-1">08031696371</p>
+                                <p className="font-medium text-on-surface mb-1">08021179415</p>
+                                <p className="font-medium text-on-surface">08035931515</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4">
@@ -247,7 +263,8 @@ function ContactPage() {
                             </div>
                             <div>
                                 <p className="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest mb-2">Email</p>
-                                <p className="font-medium text-on-surface">operations@davitakombat.com</p>
+                                <p className="font-medium text-on-surface mb-1">davita.kombat@gmail.com</p>
+                                <p className="font-medium text-on-surface">hr.davita2025ksl@gmail.com</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4">
@@ -255,20 +272,33 @@ function ContactPage() {
                                 <span className="material-symbols-outlined text-lg">location_on</span>
                             </div>
                             <div>
-                                <p className="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest mb-2">Address</p>
+                                <p className="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest mb-2">Head Office</p>
                                 <p className="font-medium text-on-surface leading-relaxed">
-                                    Davita Kombat House<br/>
-                                    Km 10, Lekki-Epe Expressway<br/>
-                                    Near Chevron Roundabout Lekki<br/>
-                                    Lagos, Nigeria.<br/>
-                                    P.O.Box 60341 Federal Secretariat, Ikoyi.
+                                    KM 12 airport road<br/>
+                                    giri village<br/>
+                                    gwagwalada<br/>
+                                    Abuja
+                                </p>
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-4">
+                            <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-secondary">
+                                <span className="material-symbols-outlined text-lg">business</span>
+                            </div>
+                            <div>
+                                <p className="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest mb-2">Branch Office</p>
+                                <p className="font-medium text-on-surface leading-relaxed">
+                                    KM 12 kachia road<br/>
+                                    by TMD plaza<br/>
+                                    new ungwan modern market<br/>
+                                    Kaduna Nigeria
                                 </p>
                             </div>
                         </div>
                     </div>
                     {/* Iframe Map Placeholder */}
                     <div className="w-full h-[400px] bg-surface-container-low relative flex items-center justify-center">
-                        <div className="absolute inset-0 opacity-20 bg-[url('https://maps.googleapis.com/maps/api/staticmap?center=Lekki,Lagos&zoom=13&size=1200x400&maptype=roadmap')] bg-cover bg-center"></div>
+                        <div className="absolute inset-0 opacity-20 bg-[url('https://maps.googleapis.com/maps/api/staticmap?center=Abuja,Nigeria&zoom=13&size=1200x400&maptype=roadmap')] bg-cover bg-center"></div>
                         <div className="z-10 flex flex-col items-center text-on-surface-variant">
                             <span className="material-symbols-outlined text-4xl mb-2 text-primary">map</span>
                             <p className="font-medium">Interactive Map Integration Here</p>

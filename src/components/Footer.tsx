@@ -30,19 +30,40 @@ export function Footer() {
           <div className="flex flex-col">
             <h4 className="text-secondary font-bold text-lg mb-6">Contact</h4>
             <div className="flex flex-col gap-5 text-sm text-white/80">
-              <a href="tel:02013426900" className="flex items-start gap-3 hover:text-secondary transition-colors">
+              <a href="tel:08031696371" className="flex items-start gap-3 hover:text-secondary transition-colors">
                 <span className="material-symbols-outlined text-[18px] mt-0.5">call</span>
-                <span className="font-medium">02-013426900</span>
+                <div className="flex flex-col">
+                  <span className="font-medium">08031696371</span>
+                  <span className="font-medium">08021179415</span>
+                  <span className="font-medium">08035931515</span>
+                </div>
               </a>
-              <a href="mailto:operations@davitakombat.com" className="flex items-start gap-3 hover:text-secondary transition-colors">
+              <a href="mailto:davita.kombat@gmail.com" className="flex items-start gap-3 hover:text-secondary transition-colors">
                 <span className="material-symbols-outlined text-[18px] mt-0.5">mail</span>
-                <span className="font-medium">operations@davitakombat.com</span>
+                <div className="flex flex-col">
+                  <span className="font-medium">davita.kombat@gmail.com</span>
+                  <span className="font-medium">hr.davita2025ksl@gmail.com</span>
+                </div>
               </a>
-              <div className="flex items-start gap-3">
-                <span className="material-symbols-outlined text-[18px] mt-0.5">location_on</span>
-                <span className="leading-relaxed font-medium">
-                  Km 10, Lekki-Epe Expressway Near Chevron Roundabout Lekki Lagos, Nigeria.
-                </span>
+              <div className="flex flex-col gap-4">
+                <div className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-[18px] mt-0.5">location_on</span>
+                  <div className="flex flex-col">
+                    <span className="font-bold text-[10px] text-white/50 uppercase tracking-widest mb-1">Head Office</span>
+                    <span className="leading-relaxed font-medium">
+                      KM 12 airport road giri village gwagwalada Abuja
+                    </span>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-[18px] mt-0.5">business</span>
+                  <div className="flex flex-col">
+                    <span className="font-bold text-[10px] text-white/50 uppercase tracking-widest mb-1">Branch Office</span>
+                    <span className="leading-relaxed font-medium">
+                      KM 12 kachia road by TMD plaza new ungwan modern market Kaduna Nigeria
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

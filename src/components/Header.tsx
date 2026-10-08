@@ -154,9 +154,9 @@ export function Header() {
             </nav>
 
             <div className="flex items-center gap-3 sm:gap-6">
-              <a href="tel:02013426900" className="hidden lg:flex items-center gap-2 text-on-surface hover:text-primary transition-colors font-medium">
+              <a href="tel:08031696371" className="hidden lg:flex items-center gap-2 text-on-surface hover:text-primary transition-colors font-medium">
                 <span className="material-symbols-outlined text-[20px]">call</span>
-                <span>02-013426900</span>
+                <span>08031696371</span>
               </a>
               <a
                 className="hidden md:inline-flex items-center gap-2 px-6 py-3 rounded bg-primary hover:bg-primary/90 text-on-primary font-bold tracking-wide transition-colors shadow-sm"

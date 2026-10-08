@@ -121,7 +121,7 @@ function IndexComponent() {
                             {/* Service 1 */}
                             <div className="w-[350px] md:w-[400px] bg-white border border-outline-variant/20 shadow-sm flex flex-col h-full group shrink-0">
                                 <div className="h-64 overflow-hidden relative bg-surface-container">
-                                    <img src="/images/security_hero_2.jpg" alt="Escort Services" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                    <img src="/images/escort_services.jpg" alt="Escort Services" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                                 </div>
                                 <div className="p-8 flex flex-col flex-1">
                                     <h3 className="font-extrabold text-[#2563eb] text-2xl mb-4">Escort Services</h3>
@@ -137,7 +137,7 @@ function IndexComponent() {
                             {/* Service 2 */}
                             <div className="w-[350px] md:w-[400px] bg-white border border-outline-variant/20 shadow-sm flex flex-col h-full group shrink-0">
                                 <div className="h-64 overflow-hidden relative bg-surface-container">
-                                    <img src="/images/security_hero_3.jpg" alt="Cash In Transit" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                    <img src="/images/cash_in_transit.jpg" alt="Cash In Transit" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                                 </div>
                                 <div className="p-8 flex flex-col flex-1">
                                     <h3 className="font-extrabold text-[#2563eb] text-2xl mb-4">Cash In Transit</h3>
@@ -153,7 +153,7 @@ function IndexComponent() {
                             {/* Service 3 */}
                             <div className="w-[350px] md:w-[400px] bg-white border border-outline-variant/20 shadow-sm flex flex-col h-full group shrink-0">
                                 <div className="h-64 overflow-hidden relative bg-surface-container">
-                                    <img src="/images/security_hero_1.jpg" alt="Security Equipment" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                    <img src="/images/security_equipment.jpg" alt="Security Equipment" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                                 </div>
                                 <div className="p-8 flex flex-col flex-1">
                                     <h3 className="font-extrabold text-[#2563eb] text-2xl mb-4">Security Equipment</h3>
