@@ -229,7 +229,7 @@ function GuardsRecruitmentPage() {
         <section className="w-full pb-24 px-6 lg:px-12 bg-[#f5efe6]">
             <div className="max-w-6xl mx-auto relative rounded-2xl overflow-hidden bg-black shadow-xl">
                 <div className="absolute inset-0 z-0 opacity-30">
-                    <img src="/images/security_hero_2.jpg" alt="Join Davita Kombat" className="w-full h-full object-cover" />
+                    <img src="/images/manned_guarding.jpg" alt="Join Davita Kombat" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/40"></div>
                 </div>
                 

@@ -16,7 +16,7 @@ function OurBackgroundPage() {
         <section className="w-full relative h-[450px] lg:h-[500px] flex items-center bg-[#0a1a33]">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
-                <img src="/images/security_hero_1.jpg" alt="Davita Kombat Facility" className="w-full h-full object-cover opacity-30" />
+                <img src="/images/manned_guarding.jpg" alt="Davita Kombat Facility" className="w-full h-full object-cover opacity-30" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a1a33] via-[#0a1a33]/60 to-transparent"></div>
             </div>
             
@@ -100,7 +100,7 @@ function OurBackgroundPage() {
                 {/* Right: Image */}
                 <div className="relative">
                     <div className="absolute right-0 top-0 bottom-0 w-2 bg-secondary z-20 rounded-r-lg"></div>
-                    <img src="/images/security_hero_2.jpg" alt="Our Vision Training" className="w-full h-[400px] object-cover rounded-lg shadow-xl relative z-10" />
+                    <img src="/images/davita_patrol_team.jpg" alt="Our Vision Training" className="w-full h-[400px] object-cover rounded-lg shadow-xl relative z-10" />
                 </div>
             </div>
         </section>
@@ -112,7 +112,7 @@ function OurBackgroundPage() {
                 {/* Left: Image */}
                 <div className="relative order-2 lg:order-1">
                     <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#2563eb] z-20 rounded-l-lg"></div>
-                    <img src="/images/security_hero_3.jpg" alt="Our Mission Operations" className="w-full h-[400px] object-cover rounded-lg shadow-xl relative z-10" />
+                    <img src="/images/davita_guard_officers.jpg" alt="Our Mission Operations" className="w-full h-[400px] object-cover rounded-lg shadow-xl relative z-10" />
                 </div>
 
                 {/* Right: Text */}

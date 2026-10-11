@@ -117,7 +117,7 @@ function ArmedEscortPage() {
                   transition={{ duration: 0.7, ease: "easeOut" }}
                   className="relative w-full h-[360px] lg:h-[480px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white group"
                 >
-                    <img src="/images/security_hero_3.jpg" alt="Armed Escort Tactical Vehicle" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    <img src="/images/escort_services.jpg" alt="Armed Escort Tactical Vehicle" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                     <div className="absolute top-4 left-4 px-3.5 py-1.5 bg-[#0b1c30]/90 backdrop-blur-md rounded-lg text-white font-bold text-xs uppercase tracking-wider flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-[#3b82f6] animate-ping"></span>

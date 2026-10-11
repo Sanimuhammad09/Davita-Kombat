@@ -168,7 +168,7 @@ function EscortServicesPage() {
                     </div>
                     {/* Right Image Box */}
                     <div className="relative rounded-xl overflow-hidden h-[350px] shadow-sm">
-                        <img src="/images/security_hero_2.jpg" alt="Escort Vehicle" className="w-full h-full object-cover" />
+                        <img src="/images/escort_services.jpg" alt="Escort Vehicle" className="w-full h-full object-cover" />
                         <div className="absolute bottom-6 left-6 bg-[#f3e8d5] px-4 py-2 flex items-center gap-2 rounded shadow-md border border-[#2563eb]/20">
                             <TruckIcon />
                             <span className="font-extrabold text-xs text-on-surface">Escort Services</span>

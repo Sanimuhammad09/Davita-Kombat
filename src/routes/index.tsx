@@ -19,13 +19,13 @@ function IndexComponent() {
     },
     {
       title: "Tactical Response Teams",
-      desc: "Highly trained, professional security personnel ready to deploy across Nigeria.",
-      img: "/images/security_hero_2.jpg",
+      desc: "Highly trained, professional Nigerian security personnel ready to deploy across Nigeria.",
+      img: "/images/davita_patrol_team.jpg",
     },
     {
-      title: "Armed Escort",
+      title: "Armed Escort & VIP Protocol",
       desc: "Elite VIP protection and secure transit across all Nigerian territories.",
-      img: "/images/security_hero_3.jpg",
+      img: "/images/escort_services.jpg",
     },
     {
       title: "Command & Control",
@@ -44,7 +44,7 @@ function IndexComponent() {
     {
       title: "Armed Escort (Intra/Interstate)",
       desc: "Heavy-duty tactical armed convoy escort and protective transit units safeguarding long-distance travel and cross-country haulage.",
-      img: "/images/security_hero_3.jpg",
+      img: "/images/escort_services.jpg",
       path: "/services/armed-escort",
     },
     {
@@ -318,27 +318,27 @@ function IndexComponent() {
                     {[1, 2].map((set) => (
                         <div key={set} className="flex gap-4">
                             <div className="shrink-0 w-[300px] md:w-[400px] h-[300px] relative rounded-xl overflow-hidden group hover-lift">
-                                <img src="/images/security_hero_1.jpg" alt="Control Room Monitoring" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                <img src="/images/command_control.jpg" alt="Control Room Monitoring" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-                                <h4 className="absolute bottom-6 left-6 text-white font-extrabold text-xl">Control Room Monitoring</h4>
+                                <h4 className="absolute bottom-6 left-6 text-white font-extrabold text-xl">24/7 Command Center</h4>
                             </div>
 
                             <div className="shrink-0 w-[300px] md:w-[400px] h-[300px] relative rounded-xl overflow-hidden group hover-lift">
-                                <img src="/images/security_hero_2.jpg" alt="CCTV Surveillance" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                <img src="/images/car_tracking.jpg" alt="Vehicle Telemetry & Tracking" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-                                <h4 className="absolute bottom-6 left-6 text-white font-extrabold text-xl">CCTV Surveillance</h4>
+                                <h4 className="absolute bottom-6 left-6 text-white font-extrabold text-xl">GPS Vehicle Tracking</h4>
                             </div>
 
                             <div className="shrink-0 w-[300px] md:w-[400px] h-[300px] relative rounded-xl overflow-hidden group hover-lift">
-                                <img src="/images/security_hero_3.jpg" alt="Key Watcher Access Control" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                <img src="/images/davita_patrol_team.jpg" alt="Access Control & Screening" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-                                <h4 className="absolute bottom-6 left-6 text-white font-extrabold text-xl">Key Watcher Access Control</h4>
+                                <h4 className="absolute bottom-6 left-6 text-white font-extrabold text-xl">Access Control & Screening</h4>
                             </div>
 
                             <div className="shrink-0 w-[300px] md:w-[400px] h-[300px] relative rounded-xl overflow-hidden group hover-lift">
-                                <img src="/images/security_hero_1.jpg" alt="Key Management Systems" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                <img src="/images/davita_guard_officers.jpg" alt="Davita Guard Force" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-                                <h4 className="absolute bottom-6 left-6 text-white font-extrabold text-xl">Key Management Systems</h4>
+                                <h4 className="absolute bottom-6 left-6 text-white font-extrabold text-xl">Trained Guard Force</h4>
                             </div>
                         </div>
                     ))}
@@ -376,7 +376,7 @@ function IndexComponent() {
                 {/* Row 2 */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div className="order-2 lg:order-1 relative rounded-2xl overflow-hidden shadow-lg h-[400px] hover-lift group">
-                        <img src="/images/security_hero_3.jpg" alt="Guards Training" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                        <img src="/images/davita_guard_officers.jpg" alt="Davita Kombat Security Personnel" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                     </div>
                     <div className="flex flex-col order-1 lg:order-2">
                         <p className="text-on-surface-variant font-medium text-lg leading-relaxed mb-8">

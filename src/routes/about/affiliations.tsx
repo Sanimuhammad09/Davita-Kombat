@@ -27,7 +27,7 @@ function AffiliationsPage() {
         {/* Section 1: Hero Banner */}
         <section className="w-full relative h-[450px] lg:h-[500px] flex items-center bg-[#0a1a33]">
             <div className="absolute inset-0 z-0">
-                <img src="/images/security_hero_2.jpg" alt="Davita Kombat Guards" className="w-full h-full object-cover opacity-40" />
+                <img src="/images/manned_guarding.jpg" alt="Davita Kombat Guards" className="w-full h-full object-cover opacity-40" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a1a33] via-[#0a1a33]/70 to-[#0a1a33]/30"></div>
             </div>
             
@@ -123,8 +123,8 @@ function AffiliationsPage() {
                     <div className="relative h-full flex flex-col justify-center lg:justify-start pt-4 lg:pl-10">
                         <div className="absolute left-0 top-12 bottom-12 w-[3px] bg-[#2563eb] hidden lg:block"></div>
                         <img 
-                            src="/images/security_hero_3.jpg" 
-                            alt="Facility Corridor" 
+                            src="/images/davita_guard_officers.jpg" 
+                            alt="Facility Security Team" 
                             className="w-full h-auto max-h-[400px] object-cover shadow-lg border border-outline-variant/30"
                         />
                     </div>

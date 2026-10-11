@@ -54,7 +54,7 @@ function OurCoreValuesPage() {
         <section className="w-full relative h-[450px] lg:h-[500px] flex items-center bg-[#0a1a33]">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
-                <img src="/images/security_hero_2.jpg" alt="Davita Kombat Guards" className="w-full h-full object-cover opacity-40" />
+                <img src="/images/manned_guarding.jpg" alt="Davita Kombat Guards" className="w-full h-full object-cover opacity-40" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a1a33] via-[#0a1a33]/70 to-[#0a1a33]/30"></div>
             </div>
             

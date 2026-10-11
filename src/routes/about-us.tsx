@@ -116,7 +116,7 @@ function AboutUsComponent() {
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 <div className="lg:col-span-5 relative">
 <div className="rounded-xl overflow-hidden shadow-lg bg-surface-container">
-<img className="w-full h-[440px] object-cover" alt="Modern high-tech security operations command center" src="/images/security_hero_2.jpg"/>
+<img className="w-full h-[440px] object-cover" alt="Modern high-tech security operations command center" src="/images/command_control.jpg"/>
 </div>
 <div className="mt-4 p-4 rounded bg-surface-container-high flex items-center justify-between">
 <span className="font-label-tactical text-label-tactical text-primary uppercase">C4I CONTROL ROOM • ABUJA HQ</span>
@@ -586,7 +586,7 @@ function AboutUsComponent() {
 </div>
 <div className="lg:col-span-6 relative">
 <div className="rounded-xl overflow-hidden shadow-lg bg-surface-container">
-<img className="w-full h-[480px] object-cover" alt="Uniformed Davita Kombat community outreach officers" src="/images/security_hero_3.jpg"/>
+<img className="w-full h-[480px] object-cover" alt="Uniformed Davita Kombat community outreach officers" src="/images/davita_patrol_team.jpg"/>
 </div>
 <div className="absolute -bottom-6 -right-6 hidden sm:block p-6 rounded-lg bg-primary text-on-primary shadow-xl max-w-xs">
 <p className="font-headline-lg text-headline-lg text-secondary-fixed font-extrabold leading-none">18+</p>

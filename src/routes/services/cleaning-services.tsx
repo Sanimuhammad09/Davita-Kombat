@@ -104,16 +104,44 @@ function CleaningServicesPage() {
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.7, ease: "easeOut" }}
-                  className="relative w-full h-[360px] lg:h-[480px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white group"
+                  className="relative w-full min-h-[380px] lg:h-[480px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-gradient-to-br from-[#071322] via-[#0d223a] to-[#15345a] p-8 flex flex-col justify-between text-white group hover-lift"
                 >
-                    <img src="/images/security_hero_2.jpg" alt="Commercial Cleaning Services" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                    <div className="absolute top-4 left-4 px-3.5 py-1.5 bg-[#0b1c30]/90 backdrop-blur-md rounded-lg text-white font-bold text-xs uppercase tracking-wider flex items-center gap-2">
-                        <span className="w-2 h-2 rounded-full bg-[#3b82f6] animate-ping"></span>
-                        PREMIUM CORPORATE HYGIENE
+                    <div className="absolute -right-20 -top-20 w-72 h-72 rounded-full bg-blue-500/10 blur-3xl pointer-events-none"></div>
+                    <div className="absolute -left-20 -bottom-20 w-72 h-72 rounded-full bg-sky-400/10 blur-3xl pointer-events-none"></div>
+
+                    <div className="flex items-center justify-between relative z-10">
+                        <div className="px-3.5 py-1.5 bg-blue-500/20 border border-blue-400/30 backdrop-blur-md rounded-lg text-blue-300 font-bold text-xs uppercase tracking-wider flex items-center gap-2">
+                            <span className="w-2 h-2 rounded-full bg-[#38bdf8] animate-ping"></span>
+                            PREMIUM CORPORATE HYGIENE
+                        </div>
+                        <img src="/images/logo.jpg" alt="Davita Kombat" className="h-10 w-auto object-contain rounded" />
                     </div>
-                    <div className="absolute bottom-6 left-6 text-white font-extrabold text-xl">
-                        Davita Facility Hygiene Division
+
+                    <div className="my-auto py-6 relative z-10 flex flex-col items-center text-center">
+                        <div className="w-20 h-20 rounded-2xl bg-gradient-to-tr from-[#2563eb] to-[#38bdf8] flex items-center justify-center shadow-lg mb-6 group-hover:scale-110 transition-transform">
+                            <span className="material-symbols-outlined text-[44px] text-white">cleaning_services</span>
+                        </div>
+                        <h3 className="font-extrabold text-2xl lg:text-3xl text-white mb-2">
+                            Davita Facility Management
+                        </h3>
+                        <p className="text-gray-300 text-sm max-w-sm leading-relaxed">
+                            Industrial hygiene, commercial high-rise janitorial maintenance, and sanitized work environments across Nigeria.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-3 gap-3 pt-4 border-t border-white/10 relative z-10 text-center">
+                        <div className="bg-white/5 backdrop-blur-sm rounded-lg p-2.5">
+                            <p className="text-xl font-black text-[#38bdf8]">100%</p>
+                            <p className="text-[10px] text-gray-300 uppercase tracking-wider font-semibold">Eco-Grade</p>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-lg p-2.5">
+                            <p className="text-xl font-black text-[#38bdf8]">24/7</p>
+                            <p className="text-[10px] text-gray-300 uppercase tracking-wider font-semibold">Disinfection</p>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-lg p-2.5">
+                            <p className="text-xl font-black text-[#38bdf8]">NSCDC</p>
+                            <p className="text-[10px] text-gray-300 uppercase tracking-wider font-semibold">Vetted Staff</p>
+                        </div>
                     </div>
                 </motion.div>
 

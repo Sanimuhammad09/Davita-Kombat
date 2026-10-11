@@ -27,7 +27,7 @@ function OurManagementPage() {
         <section className="w-full relative h-[450px] lg:h-[500px] flex items-center bg-[#0a1a33]">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
-                <img src="/images/security_hero_2.jpg" alt="Davita Kombat Guards" className="w-full h-full object-cover opacity-40" />
+                <img src="/images/davita_guard_officers.jpg" alt="Davita Kombat Management" className="w-full h-full object-cover opacity-40" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a1a33] via-[#0a1a33]/70 to-[#0a1a33]/30"></div>
             </div>
             
@@ -77,46 +77,46 @@ function OurManagementPage() {
 
                 {/* CEO Profile - Centered */}
                 <div className="flex justify-center mb-16">
-                    <div className="w-full max-w-[320px] bg-white rounded-md border border-outline-variant/30 shadow-sm overflow-hidden flex flex-col">
-                        <div className="relative w-full aspect-[3/4] bg-surface-container-low p-3">
-                            <img 
-                                src="/images/security_hero_3.jpg" 
-                                alt="Mr. Samuel Olaniran" 
-                                className="w-full h-full object-cover"
-                            />
-                            {/* Bottom shadow overlay for image */}
-                            <div className="absolute bottom-3 left-3 right-3 h-24 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div className="w-full max-w-[340px] bg-gradient-to-b from-[#0a192f] to-[#0d2342] text-white rounded-2xl shadow-xl overflow-hidden border border-blue-900/40 p-6 flex flex-col items-center text-center hover-lift">
+                        <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-[#2563eb] to-[#38bdf8] p-1 shadow-lg mb-4">
+                            <div className="w-full h-full rounded-full bg-[#0a192f] flex items-center justify-center border-2 border-white/20">
+                                <span className="text-2xl font-black text-white tracking-wider">SO</span>
+                            </div>
                         </div>
-                        <div className="flex flex-col items-center justify-center p-6 text-center">
-                            <h3 className="font-extrabold text-on-surface text-lg mb-1">Mr. Samuel Olaniran</h3>
-                            <p className="text-[#2563eb] font-bold text-[10px] tracking-widest uppercase">
-                                MANAGING DIRECTOR/CEO
-                            </p>
+                        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-bold uppercase tracking-wider mb-2">
+                            <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+                            CHIEF EXECUTIVE
                         </div>
+                        <h3 className="font-extrabold text-xl text-white mb-1">Mr. Samuel Olaniran</h3>
+                        <p className="text-[#38bdf8] font-bold text-xs tracking-widest uppercase">
+                            MANAGING DIRECTOR/CEO
+                        </p>
+                        <p className="text-gray-300 text-xs mt-3 leading-relaxed">
+                            Over three decades of visionary leadership in industrial protection, national infrastructure security, and corporate governance in Nigeria.
+                        </p>
                     </div>
                 </div>
 
                 {/* Other Executives Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {executives.map((exec, idx) => (
-                        <div key={idx} className="w-full bg-white rounded-md border border-outline-variant/30 shadow-sm overflow-hidden flex flex-col">
-                            <div className="relative w-full aspect-[3/4] bg-surface-container-low p-3">
-                                <img 
-                                    src={exec.img} 
-                                    alt={exec.name} 
-                                    className="w-full h-full object-cover"
-                                />
-                                {/* Bottom shadow overlay for image */}
-                                <div className="absolute bottom-3 left-3 right-3 h-24 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    {executives.map((exec, idx) => {
+                        const initials = exec.name.replace(/^(Mr\.|Mrs\.|Ms\.)\s*/, '').split(' ').slice(0, 2).map(n => n[0]).join('');
+                        return (
+                            <div key={idx} className="w-full bg-white rounded-xl border border-outline-variant/30 shadow-sm overflow-hidden flex flex-col p-6 hover-lift">
+                                <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-[#1e40af] to-[#3b82f6] p-0.5 mx-auto mb-4">
+                                    <div className="w-full h-full rounded-full bg-[#f8fafc] flex items-center justify-center border border-gray-200">
+                                        <span className="text-lg font-black text-[#1e40af]">{initials}</span>
+                                    </div>
+                                </div>
+                                <div className="flex flex-col items-center justify-center text-center">
+                                    <h3 className="font-bold text-on-surface text-sm mb-1">{exec.name}</h3>
+                                    <p className="text-[#2563eb] font-bold text-[10px] tracking-widest uppercase leading-tight mt-1">
+                                        {exec.role}
+                                    </p>
+                                </div>
                             </div>
-                            <div className="flex flex-col items-start p-5">
-                                <h3 className="font-extrabold text-on-surface text-sm mb-1">{exec.name}</h3>
-                                <p className="text-[#2563eb] font-bold text-[10px] tracking-widest uppercase leading-tight">
-                                    {exec.role}
-                                </p>
-                            </div>
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
 
             </div>
