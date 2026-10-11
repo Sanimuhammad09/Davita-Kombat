@@ -73,16 +73,17 @@ export function Header() {
                 <a
                   className="font-label-lg text-label-lg text-on-surface-variant group-hover:text-primary transition-colors flex items-center gap-1 cursor-pointer"
                 >
-                  About Us <span className="material-symbols-outlined text-[18px]">expand_more</span>
+                  About Us <span className="material-symbols-outlined text-[18px] group-hover:rotate-180 transition-transform duration-300">expand_more</span>
                 </a>
-                <div className="absolute top-full left-0 w-72 bg-surface-container-lowest shadow-lg rounded-b-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <div className="bg-[#1a1a1a] text-secondary font-bold px-5 py-3 uppercase text-sm rounded-t-md">
+                <div className="absolute top-full left-0 w-72 bg-surface-container-lowest shadow-2xl rounded-b-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-50 border border-outline-variant/10">
+                  <div className="bg-[#0b1c30] text-[#3b82f6] font-bold px-5 py-3.5 uppercase text-xs tracking-wider rounded-t-xl flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#3b82f6] animate-pulse"></span>
                     About Us
                   </div>
                   <ul className="py-2 flex flex-col">
                     {aboutLinks.map(item => (
                       <li key={item.name}>
-                        <Link to={item.path} className="flex items-center gap-3 px-5 py-2.5 hover:bg-surface-container-low transition-colors text-on-surface-variant font-medium">
+                        <Link to={item.path} className="flex items-center gap-3 px-5 py-2.5 hover:bg-surface-container-low transition-colors text-on-surface-variant font-medium text-sm">
                           <div className="w-1.5 h-1.5 rounded-full bg-secondary"></div>
                           {item.name}
                         </Link>
@@ -97,16 +98,17 @@ export function Header() {
                 <a
                   className="font-label-lg text-label-lg text-on-surface-variant group-hover:text-primary transition-colors flex items-center gap-1 cursor-pointer"
                 >
-                  Services <span className="material-symbols-outlined text-[18px]">expand_more</span>
+                  Services <span className="material-symbols-outlined text-[18px] group-hover:rotate-180 transition-transform duration-300">expand_more</span>
                 </a>
-                <div className="absolute top-full left-0 w-72 bg-surface-container-lowest shadow-lg rounded-b-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <div className="bg-[#1a1a1a] text-secondary font-bold px-5 py-3 uppercase text-sm rounded-t-md">
+                <div className="absolute top-full left-0 w-72 bg-surface-container-lowest shadow-2xl rounded-b-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-50 border border-outline-variant/10">
+                  <div className="bg-[#0b1c30] text-[#3b82f6] font-bold px-5 py-3.5 uppercase text-xs tracking-wider rounded-t-xl flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#3b82f6] animate-pulse"></span>
                     Our Services
                   </div>
                   <ul className="py-2 flex flex-col">
                     {serviceLinks.map(item => (
                       <li key={item.name}>
-                        <Link to={item.path} className="flex items-center gap-3 px-5 py-2.5 hover:bg-surface-container-low transition-colors text-on-surface-variant font-medium">
+                        <Link to={item.path} className="flex items-center gap-3 px-5 py-2.5 hover:bg-surface-container-low transition-colors text-on-surface-variant font-medium text-sm">
                           <div className="w-1.5 h-1.5 rounded-full bg-secondary"></div>
                           {item.name}
                         </Link>
@@ -121,10 +123,11 @@ export function Header() {
                 <a
                   className="font-label-lg text-label-lg text-on-surface-variant group-hover:text-primary transition-colors flex items-center gap-1 cursor-pointer"
                 >
-                  Explore <span className="material-symbols-outlined text-[18px]">expand_more</span>
+                  Explore <span className="material-symbols-outlined text-[18px] group-hover:rotate-180 transition-transform duration-300">expand_more</span>
                 </a>
-                <div className="absolute top-full left-0 w-80 bg-surface-container-lowest shadow-lg rounded-b-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <div className="bg-[#1a1a1a] text-secondary font-bold px-5 py-3 uppercase text-sm rounded-t-md">
+                <div className="absolute top-full left-0 w-80 bg-surface-container-lowest shadow-2xl rounded-b-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-50 border border-outline-variant/10">
+                  <div className="bg-[#0b1c30] text-[#3b82f6] font-bold px-5 py-3.5 uppercase text-xs tracking-wider rounded-t-xl flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#3b82f6] animate-pulse"></span>
                     Explore
                   </div>
                   <ul className="py-2 flex flex-col">
@@ -183,7 +186,7 @@ export function Header() {
 
           {/* Mobile Menu Dropdown */}
           {isMobileMenuOpen && (
-            <div className="xl:hidden absolute top-full left-0 right-0 bg-surface-container-lowest border-t border-surface-container-high shadow-xl max-h-[calc(100vh-5rem)] overflow-y-auto">
+            <div className="xl:hidden absolute top-full left-0 right-0 bg-surface-container-lowest border-t border-surface-container-high shadow-2xl max-h-[calc(100vh-5rem)] overflow-y-auto animate-page-enter">
               <nav className="flex flex-col p-6 gap-6">
                 <Link 
                   to="/" 
