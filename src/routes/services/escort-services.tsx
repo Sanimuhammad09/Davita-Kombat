@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
+import { motion } from 'framer-motion'
 import { Header } from '../../components/Header'
 import { Footer } from '../../components/Footer'
 
@@ -11,38 +12,38 @@ function EscortServicesPage() {
     {
       num: "01",
       title: "OUR APPROACH",
-      desc: "Davita Kombat Nigeria Limited Escort Services provide reliable and secure accompaniment for personnel, valuables, and cargo across Nigeria. Whether you need armed escorts for high-value shipments or professional security operatives for executive travel, Davita Kombat delivers dependable protection every step of the way.",
+      desc: "Davita Kombat Nigeria Limited Escort and Protocol Services provide prestigious and secure accompaniment for personnel, dignitaries, valuables, and corporate delegations across Nigeria. Whether you need VIP protocol reception at international airports or security operatives for high-profile executive engagements, Davita Kombat delivers dependable protection every step of the way.",
       active: false
     },
     {
       num: "02",
       title: "TAILORED SOLUTIONS",
-      desc: "We plan and execute escort operations with meticulous attention to detail, including advance route surveys, communication protocols, and contingency planning. Our escort teams are trained to handle a variety of scenarios and are equipped to respond swiftly to any security threat.",
+      desc: "We plan and execute protocol and escort operations with meticulous attention to detail, including advance route surveys, airport VIP lounge coordination, security clearances, and discrete protection. Our operatives are trained in diplomatic etiquette and threat avoidance.",
       active: false
     },
     {
       num: "03",
       title: "OUR COMMITMENT",
-      desc: "With a fleet of well-maintained vehicles and a network of trained operatives stationed across Nigeria, we provide nationwide coverage for all escort requirements.",
+      desc: "With a fleet of luxury executive vehicles, trained protocol liaison officers, and nationwide coverage, we provide seamless escort and protocol facilitation across Abuja, Lagos, Port Harcourt, and major Nigerian economic centers.",
       active: true
     }
   ];
 
   const highlights = [
-    "Armed and unarmed escort options",
-    "Advance route planning and surveys",
-    "Executive and VIP travel security",
-    "Cargo and shipment protection",
-    "Nationwide operational coverage",
-    "24/7 communication and coordination"
+    "VIP & Diplomatic protocol facilitation",
+    "Airport meet-and-greet & fast-track transit",
+    "Executive and delegation travel protection",
+    "Luxury escort vehicle fleet",
+    "Route survey & advance security clearance",
+    "24/7 Central Command & Control coordination"
   ];
 
   const otherServices = [
-    { title: "Special Investigation", desc: "Comprehensive investigative services to uncover ...", icon: "/images/security_hero_1.jpg", path: "/services/special-investigation" },
-    { title: "Access Control Systems", desc: "Advanced access control solutions to manage an...", icon: "/images/security_hero_2.jpg", path: "/services/access-control" },
-    { title: "Cash In Transit", desc: "Secure cash and valuables transportation with ar...", icon: "/images/security_hero_1.jpg", path: "/services/cash-in-transit" },
-    { title: "Security Equipment", desc: "Supply, installation, and maintenance of professio...", icon: "/images/security_hero_2.jpg", path: "/services/security-equipment" },
-    { title: "Maritime Security", desc: "Offshore and maritime security services leveragin...", icon: "/images/security_hero_1.jpg", path: "/services/maritime-security" }
+    { title: "Armed Escort (Intra/Interstate)", desc: "High-security highway convoy escort...", icon: "/images/security_hero_3.jpg", path: "/services/armed-escort" },
+    { title: "Car Tracking Services", desc: "Real-time GPS vehicle tracking & recovery...", icon: "/images/security_equipment.jpg", path: "/services/car-tracking" },
+    { title: "Risk Analysis & Management", desc: "Threat assessments & risk mitigation...", icon: "/images/command_control.jpg", path: "/services/risk-analysis" },
+    { title: "Secured Transport", desc: "Armored bullion and high-value logistics...", icon: "/images/cash_in_transit.jpg", path: "/services/secured-transport" },
+    { title: "Manned Guarding", desc: "Disciplined static guards & facility defense...", icon: "/images/security_hero_1.jpg", path: "/services/manned-guarding" }
   ];
 
   const TruckIcon = () => (
@@ -67,15 +68,20 @@ function EscortServicesPage() {
             <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 w-full py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 
                 {/* Left Content */}
-                <div className="flex flex-col">
+                <motion.div 
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                  className="flex flex-col"
+                >
                     <div className="flex items-center gap-3 mb-6">
                         <div className="w-8 h-[2px] bg-[#2563eb]"></div>
-                        <span className="font-bold tracking-widest uppercase text-xs text-[#2563eb]">Our Services</span>
+                        <span className="font-bold tracking-widest uppercase text-xs text-[#2563eb]">Executive Protection</span>
                         <div className="w-8 h-[2px] bg-[#2563eb]"></div>
                     </div>
                     
-                    <h1 className="font-headline-xl text-[48px] lg:text-[72px] font-extrabold leading-tight text-on-surface mb-4">
-                        Escort <span className="text-on-surface">Services</span>
+                    <h1 className="font-headline-xl text-[40px] sm:text-[48px] lg:text-[70px] font-extrabold leading-tight text-on-surface mb-4">
+                        Escort / <span className="text-[#2563eb]">Protocol Services</span>
                     </h1>
                     
                     <div className="flex items-center gap-2 mb-8">
@@ -83,41 +89,48 @@ function EscortServicesPage() {
                         <div className="w-2 h-2 rounded-full bg-[#2563eb]"></div>
                     </div>
                     
-                    <p className="text-lg text-on-surface-variant font-medium mb-10 max-w-lg">
-                        Reliable armed and unarmed escort services for personnel, valuables, and cargo across Nigeria.
+                    <p className="text-lg text-on-surface-variant font-medium mb-10 max-w-lg leading-relaxed">
+                        Prestigious protocol management, airport VIP facilitation, and secure executive escort services delivered with diplomatic finesse and unwavering vigilance across Nigeria.
                     </p>
 
-                    <div className="flex flex-wrap gap-4 mb-10">
-                        <div className="flex items-center gap-2 bg-white border border-outline-variant/30 rounded-full px-4 py-2 shadow-sm text-sm font-bold text-on-surface-variant">
-                            <svg className="w-4 h-4 text-[#2563eb]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                            Armed and unarmed escort options
-                        </div>
-                        <div className="flex items-center gap-2 bg-white border border-outline-variant/30 rounded-full px-4 py-2 shadow-sm text-sm font-bold text-on-surface-variant">
-                            <svg className="w-4 h-4 text-[#2563eb]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                            Advance route planning and surveys
-                        </div>
-                        <div className="flex items-center gap-2 bg-white border border-outline-variant/30 rounded-full px-4 py-2 shadow-sm text-sm font-bold text-on-surface-variant">
-                            <svg className="w-4 h-4 text-[#2563eb]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                            Executive and VIP travel security
-                        </div>
+                    <div className="flex flex-wrap gap-3 mb-10">
+                        {highlights.slice(0, 3).map((item, idx) => (
+                          <div key={idx} className="flex items-center gap-2 bg-white border border-outline-variant/30 rounded-full px-4 py-2 shadow-sm text-sm font-bold text-on-surface-variant">
+                              <span className="material-symbols-outlined text-[18px] text-[#2563eb]">verified</span>
+                              {item}
+                          </div>
+                        ))}
                     </div>
 
-                    <Link to="/contact" className="bg-secondary text-on-surface font-extrabold px-8 py-4 w-fit hover:bg-secondary/90 transition-colors shadow-md">
-                        Get a Free Consultation
-                    </Link>
-                </div>
+                    <div className="flex flex-wrap gap-4">
+                      <Link to="/contact" className="bg-[#2563eb] text-white font-extrabold px-8 py-4 rounded-lg hover:bg-blue-600 transition-all shadow-md hover:scale-105">
+                          Book Protocol &amp; Escort
+                      </Link>
+                      <a href="tel:08021179415" className="bg-white border border-outline-variant/30 text-on-surface font-extrabold px-6 py-4 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-2 shadow-sm">
+                          <span className="material-symbols-outlined text-[#2563eb] text-[20px]">phone</span>
+                          <span>Inquire VIP Handling</span>
+                      </a>
+                    </div>
+                </motion.div>
 
                 {/* Right Image */}
-                <div className="relative w-full h-[350px] lg:h-[450px] rounded-xl overflow-hidden shadow-xl border-4 border-[#f3e8d5]">
-                    <img src="/images/security_hero_3.jpg" alt="Escort Services" className="w-full h-full object-cover" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                    <div className="absolute top-4 left-4 w-10 h-10 bg-white rounded flex items-center justify-center shadow-md">
-                        <TruckIcon />
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.7, ease: "easeOut" }}
+                  className="relative w-full h-[360px] lg:h-[480px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white group"
+                >
+                    <img src="/images/escort_services.jpg" alt="Executive Escort and Protocol Services" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div className="absolute top-4 left-4 px-3.5 py-1.5 bg-[#0b1c30]/90 backdrop-blur-md rounded-lg text-white font-bold text-xs uppercase tracking-wider flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-[#3b82f6] animate-ping"></span>
+                        VIP PROTOCOL FACILITATION
                     </div>
-                    <div className="absolute bottom-6 left-6 text-white font-extrabold text-lg">
-                        Escort Services
+                    <div className="absolute bottom-6 left-6 text-white font-extrabold text-xl">
+                        Davita Kombat Protocol Corps
                     </div>
-                </div>
+                </motion.div>
+
 
             </div>
 

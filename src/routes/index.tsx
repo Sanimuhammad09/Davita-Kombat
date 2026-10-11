@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { Typewriter } from '../components/Typewriter'
@@ -30,6 +31,51 @@ function IndexComponent() {
       title: "Command & Control",
       desc: "24/7 advanced technological surveillance and rapid response coordination.",
       img: "/images/security_hero_1.jpg",
+    },
+  ];
+
+  const topServices = [
+    {
+      title: "Escort/Protocol Services",
+      desc: "Reliable and discreet accompaniment for VIPs, executives, dignitaries, and delegates across Nigerian airports and state functions.",
+      img: "/images/escort_services.jpg",
+      path: "/services/escort-services",
+    },
+    {
+      title: "Armed Escort (Intra/Interstate)",
+      desc: "Heavy-duty tactical armed convoy escort and protective transit units safeguarding long-distance travel and cross-country haulage.",
+      img: "/images/security_hero_3.jpg",
+      path: "/services/armed-escort",
+    },
+    {
+      title: "Car Tracking Services",
+      desc: "24/7 GPS/GSM satellite vehicle telemetry, geo-fencing perimeter alerts, remote demobilization, and rapid recovery dispatch.",
+      img: "/images/security_equipment.jpg",
+      path: "/services/car-tracking",
+    },
+    {
+      title: "Risk Analysis & Management",
+      desc: "Comprehensive threat vulnerability audits, strategic risk mitigation frameworks, site surveys, and crisis response protocols.",
+      img: "/images/command_control.jpg",
+      path: "/services/risk-analysis",
+    },
+    {
+      title: "Secured Transport",
+      desc: "High-security armored vehicle transit for cash, bullion, sensitive documents, and critical assets with trained tactical operatives.",
+      img: "/images/cash_in_transit.jpg",
+      path: "/services/secured-transport",
+    },
+    {
+      title: "Manned Guarding",
+      desc: "Disciplined, NSCDC-certified static guards, K9 patrols, and tactical perimeter security for corporate and industrial facilities.",
+      img: "/images/security_hero_1.jpg",
+      path: "/services/manned-guarding",
+    },
+    {
+      title: "Cleaning Services",
+      desc: "Professional commercial, industrial and corporate janitorial hygiene, post-construction cleanup, and facility maintenance.",
+      img: "/images/security_hero_2.jpg",
+      path: "/services/cleaning-services",
     },
   ];
 
@@ -90,12 +136,13 @@ function IndexComponent() {
                 <span className="text-[#3b82f6] block min-h-[48px] sm:min-h-[60px] lg:min-h-[72px] mt-1 text-2xl sm:text-3xl lg:text-[46px]">
                   <Typewriter
                     words={[
-                      "ARMED ESCORT SERVICES",
-                      "TACTICAL RESPONSE UNITS",
-                      "CASH IN TRANSIT LOGISTICS",
-                      "24/7 SURVEILLANCE & CCTV",
-                      "VIP CLOSE PROTECTION",
-                      "MARITIME & FACILITY DEFENSE"
+                      "ESCORT / PROTOCOL SERVICES",
+                      "ARMED ESCORT (INTRA/INTERSTATE)",
+                      "CAR TRACKING SERVICES",
+                      "RISK ANALYSIS & MITIGATION",
+                      "SECURED ARMORED TRANSPORT",
+                      "MANNED GUARDING FORCES",
+                      "CORPORATE CLEANING SERVICES"
                     ]}
                     typingSpeed={65}
                     deletingSpeed={35}
@@ -198,57 +245,46 @@ function IndexComponent() {
                 <div className="animate-scroll gap-6 px-3">
                     {[1, 2].map((set) => (
                         <div key={set} className="flex gap-6">
-                            {/* Service 1 */}
-                            <div className="w-[350px] md:w-[400px] bg-white border border-outline-variant/20 shadow-sm flex flex-col h-full group shrink-0 rounded-xl overflow-hidden hover-lift">
-                                <div className="h-64 overflow-hidden relative bg-surface-container">
-                                    <img src="/images/escort_services.jpg" alt="Escort Services" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                                </div>
-                                <div className="p-8 flex flex-col flex-1">
-                                    <h3 className="font-extrabold text-[#2563eb] text-2xl mb-4">Escort Services</h3>
-                                    <p className="text-on-surface-variant font-medium text-sm leading-relaxed mb-8 flex-1">
-                                        Reliable armed and unarmed escort services for personnel, valuables, and cargo across Nigeria.
-                                    </p>
-                                    <Link to="/services/escort-services" className="bg-[#2563eb] text-white font-bold px-6 py-3 text-sm rounded-lg hover:bg-[#2563eb]/90 transition-colors self-start shadow-sm hover:shadow">
-                                        Read More
-                                    </Link>
-                                </div>
-                            </div>
-
-                            {/* Service 2 */}
-                            <div className="w-[350px] md:w-[400px] bg-white border border-outline-variant/20 shadow-sm flex flex-col h-full group shrink-0 rounded-xl overflow-hidden hover-lift">
-                                <div className="h-64 overflow-hidden relative bg-surface-container">
-                                    <img src="/images/cash_in_transit.jpg" alt="Cash In Transit" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                                </div>
-                                <div className="p-8 flex flex-col flex-1">
-                                    <h3 className="font-extrabold text-[#2563eb] text-2xl mb-4">Cash In Transit</h3>
-                                    <p className="text-on-surface-variant font-medium text-sm leading-relaxed mb-8 flex-1">
-                                        Secure cash and valuables transportation with armored vehicles and trained operatives.
-                                    </p>
-                                    <Link to="/services/cash-in-transit" className="bg-[#2563eb] text-white font-bold px-6 py-3 text-sm rounded-lg hover:bg-[#2563eb]/90 transition-colors self-start shadow-sm hover:shadow">
-                                        Read More
-                                    </Link>
-                                </div>
-                            </div>
-
-                            {/* Service 3 */}
-                            <div className="w-[350px] md:w-[400px] bg-white border border-outline-variant/20 shadow-sm flex flex-col h-full group shrink-0 rounded-xl overflow-hidden hover-lift">
-                                <div className="h-64 overflow-hidden relative bg-surface-container">
-                                    <img src="/images/security_equipment.jpg" alt="Security Equipment" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                                </div>
-                                <div className="p-8 flex flex-col flex-1">
-                                    <h3 className="font-extrabold text-[#2563eb] text-2xl mb-4">Security Equipment</h3>
-                                    <p className="text-on-surface-variant font-medium text-sm leading-relaxed mb-8 flex-1">
-                                        Supply, installation, and maintenance of professional-grade security equipment and systems.
-                                    </p>
-                                    <Link to="/services/security-equipment" className="bg-[#2563eb] text-white font-bold px-6 py-3 text-sm rounded-lg hover:bg-[#2563eb]/90 transition-colors self-start shadow-sm hover:shadow">
-                                        Read More
-                                    </Link>
-                                </div>
-                            </div>
+                            {topServices.map((service, sIdx) => (
+                                <motion.div
+                                    key={sIdx}
+                                    whileHover={{ y: -8, transition: { duration: 0.25 } }}
+                                    className="w-[320px] sm:w-[360px] md:w-[390px] bg-white border border-outline-variant/20 shadow-sm flex flex-col h-full group shrink-0 rounded-2xl overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                                >
+                                    <div className="h-60 overflow-hidden relative bg-surface-container">
+                                        <img
+                                            src={service.img}
+                                            alt={service.title}
+                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                        />
+                                        <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#0b1c30]/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider">
+                                            Tier-1 Security
+                                        </div>
+                                    </div>
+                                    <div className="p-7 flex flex-col flex-1 justify-between">
+                                        <div>
+                                            <h3 className="font-extrabold text-[#2563eb] text-xl mb-3 group-hover:text-primary transition-colors">
+                                                {service.title}
+                                            </h3>
+                                            <p className="text-on-surface-variant font-medium text-sm leading-relaxed mb-6">
+                                                {service.desc}
+                                            </p>
+                                        </div>
+                                        <Link
+                                            to={service.path}
+                                            className="bg-[#2563eb] text-white font-bold px-6 py-3 text-sm rounded-lg hover:bg-[#2563eb]/90 transition-all self-start shadow-sm hover:shadow-md inline-flex items-center gap-1.5"
+                                        >
+                                            <span>Read More</span>
+                                            <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+                                        </Link>
+                                    </div>
+                                </motion.div>
+                            ))}
                         </div>
                     ))}
                 </div>
             </div>
+
             
             <div className="max-w-7xl mx-auto flex items-center justify-center gap-4 mt-12">
                 <button className="w-12 h-12 rounded-full bg-white border border-outline-variant/20 flex items-center justify-center hover:bg-gray-50 transition-colors text-[#2563eb] shadow-sm hover:scale-105">

@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useRouterState } from '@tanstack/react-router';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export function GlobalAnimationProvider({ children }: { children: React.ReactNode }) {
   const routerState = useRouterState();
@@ -14,7 +15,6 @@ export function GlobalAnimationProvider({ children }: { children: React.ReactNod
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('revealed');
-          // Once revealed, unobserve to retain performance
           observer.unobserve(entry.target);
         }
       });
@@ -26,19 +26,16 @@ export function GlobalAnimationProvider({ children }: { children: React.ReactNod
       threshold: 0.08,
     });
 
-    // Automatically register explicitly tagged reveal elements
     const taggedElements = document.querySelectorAll<HTMLElement>(
       '.reveal, .reveal-left, .reveal-right, .reveal-scale'
     );
     taggedElements.forEach((el) => observer.observe(el));
 
-    // Also auto-reveal major sections, cards and metric blocks that aren't hero sections
     const autoElements = document.querySelectorAll<HTMLElement>(
       'main > section:not(:first-child), main section .grid > div, main article'
     );
 
     autoElements.forEach((el) => {
-      // Avoid re-tagging if already has reveal class or is hidden
       if (!el.classList.contains('reveal') && !el.classList.contains('no-reveal')) {
         el.classList.add('reveal');
         observer.observe(el);
@@ -51,8 +48,17 @@ export function GlobalAnimationProvider({ children }: { children: React.ReactNod
   }, [pathname]);
 
   return (
-    <div key={pathname} className="animate-page-enter w-full">
-      {children}
-    </div>
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={pathname}
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -12 }}
+        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+        className="w-full"
+      >
+        {children}
+      </motion.div>
+    </AnimatePresence>
   );
 }

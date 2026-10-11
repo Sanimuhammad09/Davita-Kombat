@@ -68,20 +68,17 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Column 3: Quick Links */}
+          {/* Column 3: Core Services */}
           <div className="flex flex-col">
-            <h4 className="text-secondary font-bold text-lg mb-6">Quick Links</h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3 text-sm text-white/80 font-medium">
-              <Link to="/" className="hover:text-secondary transition-colors">Home</Link>
-              <Link to="/contact" className="hover:text-secondary transition-colors">Contact</Link>
-              <Link to="/about/our-background" className="hover:text-secondary transition-colors">About</Link>
-              <Link to="/explore/careers" className="hover:text-secondary transition-colors">Careers</Link>
-              <Link to="/services/personal-protection" className="hover:text-secondary transition-colors">Services</Link>
-              <Link to="/explore/guards-recruitment" className="hover:text-secondary transition-colors">Guards Recruitment</Link>
-              <Link to="/about/testimonials" className="hover:text-secondary transition-colors">Testimonials</Link>
-              <Link to="/explore/blog" className="hover:text-secondary transition-colors">Articles</Link>
-              <a href="#" className="hover:text-secondary transition-colors">FAQs</a>
-
+            <h4 className="text-secondary font-bold text-lg mb-6">Our Services</h4>
+            <div className="flex flex-col gap-2.5 text-sm text-white/80 font-medium">
+              <Link to="/services/escort-services" className="hover:text-secondary transition-colors">Escort/Protocol Services</Link>
+              <Link to="/services/armed-escort" className="hover:text-secondary transition-colors">Armed Escort (Intra/Interstate)</Link>
+              <Link to="/services/car-tracking" className="hover:text-secondary transition-colors">Car Tracking Services</Link>
+              <Link to="/services/risk-analysis" className="hover:text-secondary transition-colors">Risk Analysis & Management</Link>
+              <Link to="/services/secured-transport" className="hover:text-secondary transition-colors">Secured Transport</Link>
+              <Link to="/services/manned-guarding" className="hover:text-secondary transition-colors">Manned Guarding</Link>
+              <Link to="/services/cleaning-services" className="hover:text-secondary transition-colors">Cleaning Services</Link>
             </div>
           </div>
 

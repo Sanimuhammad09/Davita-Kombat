@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { motion } from 'framer-motion'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 
@@ -17,7 +18,12 @@ function ContactPage() {
             <div className="absolute top-0 right-0 w-1/2 h-full opacity-5 bg-[url('/images/security_hero_1.jpg')] bg-cover bg-center"></div>
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
                 {/* Left Side: Contact Info */}
-                <div className="flex flex-col">
+                <motion.div 
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                  className="flex flex-col"
+                >
                     <div className="flex items-center gap-4 mb-4">
                         <div className="w-8 h-0.5 bg-secondary"></div>
                         <span className="font-bold tracking-widest uppercase text-sm text-secondary">Contact Us</span>
@@ -58,10 +64,15 @@ function ContactPage() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Right Side: Stats Grid */}
-                <div className="grid grid-cols-2 gap-4 lg:pt-12">
+                <motion.div 
+                  initial={{ opacity: 0, x: 30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+                  className="grid grid-cols-2 gap-4 lg:pt-12"
+                >
                     <div className="bg-secondary text-on-secondary rounded-xl p-8 flex flex-col items-center justify-center text-center shadow-lg">
                         <span className="material-symbols-outlined text-4xl mb-4">verified_user</span>
                         <h3 className="text-4xl font-extrabold mb-2">30+</h3>
@@ -82,7 +93,7 @@ function ContactPage() {
                         <h3 className="text-4xl font-extrabold mb-2">1,000+</h3>
                         <p className="font-bold text-sm text-white/70">Clients Protected</p>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
 

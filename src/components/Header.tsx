@@ -13,14 +13,13 @@ const aboutLinks = [
 ];
 
 const serviceLinks = [
-  { name: "Personal Protection", path: "/services/personal-protection" },
-  { name: "Special Investigation", path: "/services/special-investigation" },
-  { name: "Access Control Systems", path: "/services/access-control" },
-  { name: "Escort Services", path: "/services/escort-services" },
-  { name: "Cash In Transit", path: "/services/cash-in-transit" },
-  { name: "Security Equipment", path: "/services/security-equipment" },
-  { name: "Reception Protocol", path: "/services/reception-protocol" },
-  { name: "Maritime Security", path: "/services/maritime-security" }
+  { name: "Escort/Protocol Services", path: "/services/escort-services" },
+  { name: "Armed Escort/Protocol Service (Intra/Interstate)", path: "/services/armed-escort" },
+  { name: "Car Tracking Services", path: "/services/car-tracking" },
+  { name: "Risk Analysis, Mitigation & Management", path: "/services/risk-analysis" },
+  { name: "Secured Transport", path: "/services/secured-transport" },
+  { name: "Manned Guarding", path: "/services/manned-guarding" },
+  { name: "Cleaning Services", path: "/services/cleaning-services" },
 ];
 
 const exploreLinks = [
@@ -100,7 +99,7 @@ export function Header() {
                 >
                   Services <span className="material-symbols-outlined text-[18px] group-hover:rotate-180 transition-transform duration-300">expand_more</span>
                 </a>
-                <div className="absolute top-full left-0 w-72 bg-surface-container-lowest shadow-2xl rounded-b-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-50 border border-outline-variant/10">
+                <div className="absolute top-full left-0 w-96 bg-surface-container-lowest shadow-2xl rounded-b-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-50 border border-outline-variant/10">
                   <div className="bg-[#0b1c30] text-[#3b82f6] font-bold px-5 py-3.5 uppercase text-xs tracking-wider rounded-t-xl flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#3b82f6] animate-pulse"></span>
                     Our Services

@@ -27,11 +27,17 @@ import { Route as ExploreBlogRouteImport } from './routes/explore/blog'
 import { Route as ExploreCareersRouteImport } from './routes/explore/careers'
 import { Route as ExploreGuardsRecruitmentRouteImport } from './routes/explore/guards-recruitment'
 import { Route as ServicesAccessControlRouteImport } from './routes/services/access-control'
+import { Route as ServicesArmedEscortRouteImport } from './routes/services/armed-escort'
+import { Route as ServicesCarTrackingRouteImport } from './routes/services/car-tracking'
 import { Route as ServicesCashInTransitRouteImport } from './routes/services/cash-in-transit'
+import { Route as ServicesCleaningServicesRouteImport } from './routes/services/cleaning-services'
 import { Route as ServicesEscortServicesRouteImport } from './routes/services/escort-services'
+import { Route as ServicesMannedGuardingRouteImport } from './routes/services/manned-guarding'
 import { Route as ServicesMaritimeSecurityRouteImport } from './routes/services/maritime-security'
 import { Route as ServicesPersonalProtectionRouteImport } from './routes/services/personal-protection'
 import { Route as ServicesReceptionProtocolRouteImport } from './routes/services/reception-protocol'
+import { Route as ServicesRiskAnalysisRouteImport } from './routes/services/risk-analysis'
+import { Route as ServicesSecuredTransportRouteImport } from './routes/services/secured-transport'
 import { Route as ServicesSecurityEquipmentRouteImport } from './routes/services/security-equipment'
 import { Route as ServicesSpecialInvestigationRouteImport } from './routes/services/special-investigation'
 
@@ -127,14 +133,35 @@ const ServicesAccessControlRoute = ServicesAccessControlRouteImport.update({
   path: '/services/access-control',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ServicesArmedEscortRoute = ServicesArmedEscortRouteImport.update({
+  id: '/services/armed-escort',
+  path: '/services/armed-escort',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesCarTrackingRoute = ServicesCarTrackingRouteImport.update({
+  id: '/services/car-tracking',
+  path: '/services/car-tracking',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServicesCashInTransitRoute = ServicesCashInTransitRouteImport.update({
   id: '/services/cash-in-transit',
   path: '/services/cash-in-transit',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ServicesCleaningServicesRoute =
+  ServicesCleaningServicesRouteImport.update({
+    id: '/services/cleaning-services',
+    path: '/services/cleaning-services',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ServicesEscortServicesRoute = ServicesEscortServicesRouteImport.update({
   id: '/services/escort-services',
   path: '/services/escort-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesMannedGuardingRoute = ServicesMannedGuardingRouteImport.update({
+  id: '/services/manned-guarding',
+  path: '/services/manned-guarding',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServicesMaritimeSecurityRoute =
@@ -153,6 +180,17 @@ const ServicesReceptionProtocolRoute =
   ServicesReceptionProtocolRouteImport.update({
     id: '/services/reception-protocol',
     path: '/services/reception-protocol',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ServicesRiskAnalysisRoute = ServicesRiskAnalysisRouteImport.update({
+  id: '/services/risk-analysis',
+  path: '/services/risk-analysis',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesSecuredTransportRoute =
+  ServicesSecuredTransportRouteImport.update({
+    id: '/services/secured-transport',
+    path: '/services/secured-transport',
     getParentRoute: () => rootRouteImport,
   } as any)
 const ServicesSecurityEquipmentRoute =
@@ -187,11 +225,17 @@ export interface FileRoutesByFullPath {
   '/explore/careers': typeof ExploreCareersRoute
   '/explore/guards-recruitment': typeof ExploreGuardsRecruitmentRoute
   '/services/access-control': typeof ServicesAccessControlRoute
+  '/services/armed-escort': typeof ServicesArmedEscortRoute
+  '/services/car-tracking': typeof ServicesCarTrackingRoute
   '/services/cash-in-transit': typeof ServicesCashInTransitRoute
+  '/services/cleaning-services': typeof ServicesCleaningServicesRoute
   '/services/escort-services': typeof ServicesEscortServicesRoute
+  '/services/manned-guarding': typeof ServicesMannedGuardingRoute
   '/services/maritime-security': typeof ServicesMaritimeSecurityRoute
   '/services/personal-protection': typeof ServicesPersonalProtectionRoute
   '/services/reception-protocol': typeof ServicesReceptionProtocolRoute
+  '/services/risk-analysis': typeof ServicesRiskAnalysisRoute
+  '/services/secured-transport': typeof ServicesSecuredTransportRoute
   '/services/security-equipment': typeof ServicesSecurityEquipmentRoute
   '/services/special-investigation': typeof ServicesSpecialInvestigationRoute
 }
@@ -214,11 +258,17 @@ export interface FileRoutesByTo {
   '/explore/careers': typeof ExploreCareersRoute
   '/explore/guards-recruitment': typeof ExploreGuardsRecruitmentRoute
   '/services/access-control': typeof ServicesAccessControlRoute
+  '/services/armed-escort': typeof ServicesArmedEscortRoute
+  '/services/car-tracking': typeof ServicesCarTrackingRoute
   '/services/cash-in-transit': typeof ServicesCashInTransitRoute
+  '/services/cleaning-services': typeof ServicesCleaningServicesRoute
   '/services/escort-services': typeof ServicesEscortServicesRoute
+  '/services/manned-guarding': typeof ServicesMannedGuardingRoute
   '/services/maritime-security': typeof ServicesMaritimeSecurityRoute
   '/services/personal-protection': typeof ServicesPersonalProtectionRoute
   '/services/reception-protocol': typeof ServicesReceptionProtocolRoute
+  '/services/risk-analysis': typeof ServicesRiskAnalysisRoute
+  '/services/secured-transport': typeof ServicesSecuredTransportRoute
   '/services/security-equipment': typeof ServicesSecurityEquipmentRoute
   '/services/special-investigation': typeof ServicesSpecialInvestigationRoute
 }
@@ -242,11 +292,17 @@ export interface FileRoutesById {
   '/explore/careers': typeof ExploreCareersRoute
   '/explore/guards-recruitment': typeof ExploreGuardsRecruitmentRoute
   '/services/access-control': typeof ServicesAccessControlRoute
+  '/services/armed-escort': typeof ServicesArmedEscortRoute
+  '/services/car-tracking': typeof ServicesCarTrackingRoute
   '/services/cash-in-transit': typeof ServicesCashInTransitRoute
+  '/services/cleaning-services': typeof ServicesCleaningServicesRoute
   '/services/escort-services': typeof ServicesEscortServicesRoute
+  '/services/manned-guarding': typeof ServicesMannedGuardingRoute
   '/services/maritime-security': typeof ServicesMaritimeSecurityRoute
   '/services/personal-protection': typeof ServicesPersonalProtectionRoute
   '/services/reception-protocol': typeof ServicesReceptionProtocolRoute
+  '/services/risk-analysis': typeof ServicesRiskAnalysisRoute
+  '/services/secured-transport': typeof ServicesSecuredTransportRoute
   '/services/security-equipment': typeof ServicesSecurityEquipmentRoute
   '/services/special-investigation': typeof ServicesSpecialInvestigationRoute
 }
@@ -271,11 +327,17 @@ export interface FileRouteTypes {
     | '/explore/careers'
     | '/explore/guards-recruitment'
     | '/services/access-control'
+    | '/services/armed-escort'
+    | '/services/car-tracking'
     | '/services/cash-in-transit'
+    | '/services/cleaning-services'
     | '/services/escort-services'
+    | '/services/manned-guarding'
     | '/services/maritime-security'
     | '/services/personal-protection'
     | '/services/reception-protocol'
+    | '/services/risk-analysis'
+    | '/services/secured-transport'
     | '/services/security-equipment'
     | '/services/special-investigation'
   fileRoutesByTo: FileRoutesByTo
@@ -298,11 +360,17 @@ export interface FileRouteTypes {
     | '/explore/careers'
     | '/explore/guards-recruitment'
     | '/services/access-control'
+    | '/services/armed-escort'
+    | '/services/car-tracking'
     | '/services/cash-in-transit'
+    | '/services/cleaning-services'
     | '/services/escort-services'
+    | '/services/manned-guarding'
     | '/services/maritime-security'
     | '/services/personal-protection'
     | '/services/reception-protocol'
+    | '/services/risk-analysis'
+    | '/services/secured-transport'
     | '/services/security-equipment'
     | '/services/special-investigation'
   id:
@@ -325,11 +393,17 @@ export interface FileRouteTypes {
     | '/explore/careers'
     | '/explore/guards-recruitment'
     | '/services/access-control'
+    | '/services/armed-escort'
+    | '/services/car-tracking'
     | '/services/cash-in-transit'
+    | '/services/cleaning-services'
     | '/services/escort-services'
+    | '/services/manned-guarding'
     | '/services/maritime-security'
     | '/services/personal-protection'
     | '/services/reception-protocol'
+    | '/services/risk-analysis'
+    | '/services/secured-transport'
     | '/services/security-equipment'
     | '/services/special-investigation'
   fileRoutesById: FileRoutesById
@@ -353,11 +427,17 @@ export interface RootRouteChildren {
   ExploreCareersRoute: typeof ExploreCareersRoute
   ExploreGuardsRecruitmentRoute: typeof ExploreGuardsRecruitmentRoute
   ServicesAccessControlRoute: typeof ServicesAccessControlRoute
+  ServicesArmedEscortRoute: typeof ServicesArmedEscortRoute
+  ServicesCarTrackingRoute: typeof ServicesCarTrackingRoute
   ServicesCashInTransitRoute: typeof ServicesCashInTransitRoute
+  ServicesCleaningServicesRoute: typeof ServicesCleaningServicesRoute
   ServicesEscortServicesRoute: typeof ServicesEscortServicesRoute
+  ServicesMannedGuardingRoute: typeof ServicesMannedGuardingRoute
   ServicesMaritimeSecurityRoute: typeof ServicesMaritimeSecurityRoute
   ServicesPersonalProtectionRoute: typeof ServicesPersonalProtectionRoute
   ServicesReceptionProtocolRoute: typeof ServicesReceptionProtocolRoute
+  ServicesRiskAnalysisRoute: typeof ServicesRiskAnalysisRoute
+  ServicesSecuredTransportRoute: typeof ServicesSecuredTransportRoute
   ServicesSecurityEquipmentRoute: typeof ServicesSecurityEquipmentRoute
   ServicesSpecialInvestigationRoute: typeof ServicesSpecialInvestigationRoute
 }
@@ -490,6 +570,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesAccessControlRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/services/armed-escort': {
+      id: '/services/armed-escort'
+      path: '/services/armed-escort'
+      fullPath: '/services/armed-escort'
+      preLoaderRoute: typeof ServicesArmedEscortRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/car-tracking': {
+      id: '/services/car-tracking'
+      path: '/services/car-tracking'
+      fullPath: '/services/car-tracking'
+      preLoaderRoute: typeof ServicesCarTrackingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/services/cash-in-transit': {
       id: '/services/cash-in-transit'
       path: '/services/cash-in-transit'
@@ -497,11 +591,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesCashInTransitRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/services/cleaning-services': {
+      id: '/services/cleaning-services'
+      path: '/services/cleaning-services'
+      fullPath: '/services/cleaning-services'
+      preLoaderRoute: typeof ServicesCleaningServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/services/escort-services': {
       id: '/services/escort-services'
       path: '/services/escort-services'
       fullPath: '/services/escort-services'
       preLoaderRoute: typeof ServicesEscortServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/manned-guarding': {
+      id: '/services/manned-guarding'
+      path: '/services/manned-guarding'
+      fullPath: '/services/manned-guarding'
+      preLoaderRoute: typeof ServicesMannedGuardingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/services/maritime-security': {
@@ -523,6 +631,20 @@ declare module '@tanstack/react-router' {
       path: '/services/reception-protocol'
       fullPath: '/services/reception-protocol'
       preLoaderRoute: typeof ServicesReceptionProtocolRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/risk-analysis': {
+      id: '/services/risk-analysis'
+      path: '/services/risk-analysis'
+      fullPath: '/services/risk-analysis'
+      preLoaderRoute: typeof ServicesRiskAnalysisRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/secured-transport': {
+      id: '/services/secured-transport'
+      path: '/services/secured-transport'
+      fullPath: '/services/secured-transport'
+      preLoaderRoute: typeof ServicesSecuredTransportRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/services/security-equipment': {
@@ -561,11 +683,17 @@ const rootRouteChildren: RootRouteChildren = {
   ExploreCareersRoute: ExploreCareersRoute,
   ExploreGuardsRecruitmentRoute: ExploreGuardsRecruitmentRoute,
   ServicesAccessControlRoute: ServicesAccessControlRoute,
+  ServicesArmedEscortRoute: ServicesArmedEscortRoute,
+  ServicesCarTrackingRoute: ServicesCarTrackingRoute,
   ServicesCashInTransitRoute: ServicesCashInTransitRoute,
+  ServicesCleaningServicesRoute: ServicesCleaningServicesRoute,
   ServicesEscortServicesRoute: ServicesEscortServicesRoute,
+  ServicesMannedGuardingRoute: ServicesMannedGuardingRoute,
   ServicesMaritimeSecurityRoute: ServicesMaritimeSecurityRoute,
   ServicesPersonalProtectionRoute: ServicesPersonalProtectionRoute,
   ServicesReceptionProtocolRoute: ServicesReceptionProtocolRoute,
+  ServicesRiskAnalysisRoute: ServicesRiskAnalysisRoute,
+  ServicesSecuredTransportRoute: ServicesSecuredTransportRoute,
   ServicesSecurityEquipmentRoute: ServicesSecurityEquipmentRoute,
   ServicesSpecialInvestigationRoute: ServicesSpecialInvestigationRoute,
 }
