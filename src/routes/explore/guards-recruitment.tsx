@@ -61,7 +61,7 @@ function GuardsRecruitmentPage() {
         {/* Section 1: Hero (Standard) */}
         <section className="w-full relative py-24 bg-black">
             <div className="absolute inset-0 z-0 opacity-40">
-                <img src="/images/security_hero_1.jpg" alt="Guard Recruitment" className="w-full h-full object-cover" />
+                <img src="/images/manned_guarding.jpg" alt="Guard Recruitment in Official Uniform" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
             </div>
             <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">

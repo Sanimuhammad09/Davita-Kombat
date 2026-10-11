@@ -62,7 +62,7 @@ function GuardingPatrolComponent() {
 </div>
 <div className="lg:col-span-5">
 <div className="relative rounded-2xl overflow-hidden shadow-xl bg-surface-container-high">
-<img alt="Davita Kombat Security Officers inspecting corporate entry credentials at Lagos Headquarters" className="w-full h-[460px] object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLVmyANPQv8lRI80y6C7bBzWgnGBFoHOpjhSs8Z_kkL6_pTDoqwLlF96Z_-8AB2VolK3vf7OBVMzmhNMOJ_5Pl01_0TRsvmFbXcDs4RpPcT8utixGMi0wNUPVkGAQRGBB10P1Vu2CsOI_yBHhbxc0vn5PMS1dQH0tAMkZJuRyGyJ65Vb9mV3K94njvPqTMyzvOEOWPVvGwMmnppmkVcTpUMvZoWthBk6TSWmKXdXV6q8FBYYthEx6Jqg"/>
+<img alt="Davita Kombat Security Officer in Official Uniform on Active Watch" className="w-full h-[460px] object-cover object-center" src="/images/manned_guarding.jpg"/>
 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
 <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-surface-container-lowest/95 backdrop-blur shadow-md">
 <div className="flex items-center justify-between">

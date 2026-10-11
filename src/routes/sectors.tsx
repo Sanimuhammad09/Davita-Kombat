@@ -59,7 +59,7 @@ function SectorsComponent() {
               LIVE NATIONWIDE SPREAD
             </div>
 <div className="aspect-4/3 rounded overflow-hidden mb-5">
-<img className="w-full h-full object-cover" data-alt="Nigerian private tactical patrol commander inspecting armored vehicles and communication command equipment at a high-tech corporate campus in Victoria Island Lagos under bright daylight with crisp corporate atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYvYwjajCtB6Ee5wxBaIDf7oDZB6Uw332BIgCCTodOV--CCg5h-BauP4jtlow9ILI5jSQKjwqWigfEJpcI1MuIJLiyd7xNb7tuINUB4hCQXHwK_ROCtsZvzKw5Ka_g-UVlx-CSTHv97tNUXjgA1Wm6Jrk_Cj3-gMaB5tE6GSNLyRQdJa3LOihPrrBL01xTWQw2dXo3rA1nh0YPaE6v9ZwT4Kn5lv-4370GOiy1yg-yQZgou3V8vgULTA"/>
+<img className="w-full h-full object-cover" alt="Nigerian private tactical patrol commander in official Davita uniform" src="/images/manned_guarding.jpg"/>
 </div>
 <div className="space-y-3">
 <div className="flex justify-between items-center text-body-sm font-body-sm text-on-surface-variant">

@@ -15,7 +15,7 @@ function IndexComponent() {
     {
       title: "Davita Kombat Security",
       desc: "Elite Nigerian private security solutions, offering unparalleled protection with discipline and honor.",
-      img: "/images/security_hero_1.jpg",
+      img: "/images/manned_guarding.jpg",
     },
     {
       title: "Tactical Response Teams",
@@ -30,7 +30,7 @@ function IndexComponent() {
     {
       title: "Command & Control",
       desc: "24/7 advanced technological surveillance and rapid response coordination.",
-      img: "/images/security_hero_1.jpg",
+      img: "/images/command_control.jpg",
     },
   ];
 
@@ -50,7 +50,7 @@ function IndexComponent() {
     {
       title: "Car Tracking Services",
       desc: "24/7 GPS/GSM satellite vehicle telemetry, geo-fencing perimeter alerts, remote demobilization, and rapid recovery dispatch.",
-      img: "/images/security_equipment.jpg",
+      img: "/images/car_tracking.jpg",
       path: "/services/car-tracking",
     },
     {
@@ -67,8 +67,8 @@ function IndexComponent() {
     },
     {
       title: "Manned Guarding",
-      desc: "Disciplined, NSCDC-certified static guards, K9 patrols, and tactical perimeter security for corporate and industrial facilities.",
-      img: "/images/security_hero_1.jpg",
+      desc: "Disciplined, NSCDC-certified static guards in official uniform, K9 patrols, and tactical perimeter security for corporate and industrial facilities.",
+      img: "/images/manned_guarding.jpg",
       path: "/services/manned-guarding",
     },
     {
@@ -369,7 +369,7 @@ function IndexComponent() {
                         </p>
                     </div>
                     <div className="relative rounded-2xl overflow-hidden shadow-lg h-[400px] hover-lift group">
-                        <img src="/images/security_hero_1.jpg" alt="Davita Kombat Office" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                        <img src="/images/manned_guarding.jpg" alt="Davita Kombat Manned Security Officer" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                     </div>
                 </div>
 

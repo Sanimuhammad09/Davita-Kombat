@@ -61,7 +61,7 @@ function AboutUsComponent() {
 </div>
 <div className="lg:col-span-5 relative">
 <div className="relative rounded-xl overflow-hidden shadow-xl bg-surface-container">
-<img className="w-full h-[520px] object-cover object-center" alt="Two professional Nigerian security officers" src="/images/security_hero_1.jpg"/>
+<img className="w-full h-[520px] object-cover object-center" alt="Professional Nigerian security officer in official Davita uniform" src="/images/manned_guarding.jpg"/>
 <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-primary/95 via-primary/70 to-transparent text-on-primary">
 <div className="flex items-center justify-between pb-2">
 <span className="font-label-tactical text-label-tactical uppercase tracking-wider text-primary-fixed">Guard Force Deployment Alpha</span>
